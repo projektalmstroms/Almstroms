@@ -8,11 +8,163 @@
          "authorized": true
       },
       {
-         "name": "Sara Kristallsand",
-         "id-number": "AB2274",
-         "email": "sara.kristallsand@alm.se",
+         "name": "Hugo Bergvall",
+         "id-number": "AA0001",
+         "email": "hugo.bergvall@alm.se",
          "role": "Projektledare",
-         "password": "Pink4544",
+         "password": "bergis",
+         "authorized": true
+      },
+      {
+         "name": "Björn Björnsson",
+         "id-number": "AA0002",
+         "email": "bjorn.bjornsson@alm.se",
+         "role": "Säljare",
+         "password": "bjarnis",
+         "authorized": true
+      },
+      {
+         "name": "Nisse Strömstedt",
+         "id-number": "AA0003",
+         "email": "nisse.stromstedt@alm.se",
+         "role": "Säljare",
+         "password": "nissepisse",
+         "authorized": true
+      },
+      {
+         "name": "Nalle Berg",
+         "id-number": "AA0004",
+         "email": "nalle.berg@alm.se",
+         "role": "Konsult",
+         "password": "teddybear",
+         "authorized": true
+      },
+      {
+         "name": "Ali Haddad",
+         "id-number": "AA0005",
+         "email": "ali.haddad@alm.se",
+         "role": "Administratör",
+         "password": "aliha",
+         "authorized": true
+      },
+      {
+         "name": "Issa Mansour",
+         "id-number": "AA0006",
+         "email": "issa.mansour@alm.se",
+         "role": "Administratör",
+         "password": "assi",
+         "authorized": true
+      },
+      {
+         "name": "Alen Mijatovic",
+         "id-number": "AA0007",
+         "email": "alen.mijatovic@alm.se",
+         "role": "Servicechef",
+         "password": "mijato",
+         "authorized": true
+      },
+      {
+         "name": "Davor Srna",
+         "id-number": "AA0008",
+         "email": "davor.srna@alm.se",
+         "role": "Konsult",
+         "password": "suker",
+         "authorized": true
+      },
+      {
+         "name": "Geir Asmundsen",
+         "id-number": "AA0009",
+         "email": "geir.asmundsen@alm.se",
+         "role": "Säljare",
+         "password": "norway",
+         "authorized": true
+      },
+      {
+         "name": "Albert Nalleson",
+         "id-number": "AA0010",
+         "email": "albert.nalleson@alm.se",
+         "role": "Projektledare",
+         "password": "monster",
+         "authorized": true
+      },
+      {
+         "name": "Herbert Brunberg",
+         "id-number": "AA0011",
+         "email": "herbert.brunberg@alm.se",
+         "role": "Säljare",
+         "password": "brunis",
+         "authorized": true
+      },
+      {
+         "name": "Mehmet Topal",
+         "id-number": "AA0012",
+         "email": "mehmet.topal@alm.se",
+         "role": "Servicechef",
+         "password": "memmo",
+         "authorized": true
+      },
+      {
+         "name": "Claes Carlberg",
+         "id-number": "AA0013",
+         "email": "claes.carlberg@alm.se",
+         "role": "Konsult",
+         "password": "classe",
+         "authorized": true
+      },
+      {
+         "name": "Glenn Hysén",
+         "id-number": "AA0014",
+         "email": "glenn.hysen@alm.se",
+         "role": "Säljare",
+         "password": "blavitt",
+         "authorized": true
+      },
+      {
+         "name": "Glenn Strömberg",
+         "id-number": "AA0015",
+         "email": "glenn.stromberg@alm.se",
+         "role": "Administratör",
+         "password": "bergamo",
+         "authorized": true
+      },
+      {
+         "name": "Bob Björk",
+         "id-number": "AA0016",
+         "email": "bob.bjork@alm.se",
+         "role": "Projektledare",
+         "password": "bobby",
+         "authorized": true
+      },
+      {
+         "name": "Bob Bark",
+         "id-number": "AA0017",
+         "email": "bob.bark@alm.se",
+         "role": "Säljare",
+         "password": "barkis",
+         "authorized": true
+      },
+      {
+         "name": "Sune Nilsberg",
+         "id-number": "AA0018",
+         "email": "sune.nilsberg@alm.se",
+         "role": "Konsult",
+         "password": "nilecity",
+         "authorized": true
+      },
+      {
+         "name": "Pär Lagerkvist",
+         "id-number": "AA0019",
+         "email": "par.lagerkvist@alm.se",
+         "role": "Sekreterare",
+         "password": "dvargen",
+         "authorized": true
+      },
+      {
+         "name": "Eyvind Johnson",
+         "id-number": "AA0020",
+         "email": "eyvind.johnson@alm.se",
+         "role": "Sekreterare",
+         "password": "svall",
          "authorized": true
       },
 ]}

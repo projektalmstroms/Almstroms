@@ -8,4 +8,220 @@
          "type": "mellan",
          "model": "Volvo V60"
       },
+      {
+         "registration": "KGB001",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "februari",
+         "type": "mellan",
+         "model": "Volvo V60"
+      },
+      {
+         "registration": "KGB002",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "februari",
+         "type": "mellan",
+         "model": "Volvo V60"
+      },
+      {
+         "registration": "KGB003",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "mars",
+         "type": "mellan",
+         "model": "Volvo V60"
+      },
+      {
+         "registration": "KGB004",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "mars",
+         "type": "stor",
+         "model": "Volvo XC90"
+      },
+      {
+         "registration": "KGB005",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "april",
+         "type": "stor",
+         "model": "Volvo XC90"
+      },
+      {
+         "registration": "KGB006",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "april",
+         "type": "stor",
+         "model": "Volvo XC90"
+      },
+      {
+         "registration": "KGB007",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "maj",
+         "type": "stor",
+         "model": "Volvo XC90"
+      },
+      {
+         "registration": "KGB008",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "maj",
+         "type": "stor",
+         "model": "Volvo XC90"
+      },
+      {
+         "registration": "KGB009",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "juni",
+         "type": "skåpbil",
+         "model": "Partner Skåp 1.6 BlueHDi"
+      },
+      {
+         "registration": "KGB010",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "juni",
+         "type": "skåpbil",
+         "model": "Partner Skåp 1.6 BlueHDi"
+      },
+      {
+         "registration": "KGB011",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "juli",
+         "type": "skåpbil",
+         "model": "Partner Skåp 1.6 BlueHDi"
+      },
+      {
+         "registration": "KGB012",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "juli",
+         "type": "skåpbil",
+         "model": "Partner Skåp 1.6 BlueHDi"
+      },
+      {
+         "registration": "CIA001",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "augusti",
+         "type": "skåpbil",
+         "model": "Partner Skåp 1.6 BlueHDi"
+      },
+      {
+         "registration": "CIA002",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "augusti",
+         "type": "liten",
+         "model": "Audi A3"
+      },
+      {
+         "registration": "CIA003",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "september",
+         "type": "liten",
+         "model": "Audi A3"
+      },
+      {
+         "registration": "CIA004",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "september",
+         "type": "liten",
+         "model": "Audi A3"
+      },
+      {
+         "registration": "CIA005",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "oktober",
+         "type": "liten",
+         "model": "Audi A3"
+      },
+      {
+         "registration": "CIA006",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "oktober",
+         "type": "liten",
+         "model": "Audi A3"
+      },
+      {
+         "registration": "CIA007",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "november",
+         "type": "liten",
+         "model": "Audi A3"
+      },
+      {
+         "registration": "CIA008",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "november",
+         "type": "liten",
+         "model": "Audi A3"
+      },
+      {
+         "registration": "CIA009",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "december",
+         "type": "liten",
+         "model": "Audi A3"
+      },
+      {
+         "registration": "CIA010",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "december",
+         "type": "liten",
+         "model": "Audi A3"
+      },
+      {
+         "registration": "CIA011",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "januari",
+         "type": "liten",
+         "model": "Audi A3"
+      },
+      {
+         "registration": "CIA012",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "december",
+         "type": "mellan",
+         "model": "Volvo V60"
+      },
 ]}
