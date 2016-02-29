@@ -8,11 +8,141 @@
          "authorized": true
       },
       {
-         "name": "Sara Kristallsand",
-         "id-number": "AB2274",
-         "email": "sara.kristallsand@alm.se",
-         "role": "Projektledare",
-         "password": "Pink4544",
+         "name": "Johan Eriksson",
+         "id-number": "AB1084",
+         "email": "johan.eriksson@alm.se",
+         "role": "Säljare",
+         "password": "John8980",
          "authorized": true
       },
+	  {
+         "name": "Per Larsson",
+         "id-number": "AB2021",
+         "email": "per.larsson@alm.se",
+         "role": "Administratör",
+         "password": "Perl3023",
+         "authorized": true
+      },
+	  {
+         "name": "Lena Lindberg",
+         "id-number": "AB5034",
+         "email": "lena.lindberg@alm.se",
+         "role": "Servicechef",
+         "password": "Black1245",
+         "authorized": true
+      },
+	  {
+         "name": "Marie Gustafsson",
+         "id-number": "AB7645",
+         "email": "marie.gustafsson@alm.se",
+         "role": "Receptionist",
+         "password": "Dream8880",
+         "authorized": true
+      },
+	  {
+         "name": "Daniel Magnusson",
+         "id-number": "AB2013",
+         "email": "daniel.magnusson@alm.se",
+         "role": "Säljare",
+         "password": "Mango5540",
+         "authorized": true
+      },
+	  {
+         "name": "Emma Axelsson",
+         "id-number": "AB6590",
+         "email": "emma.axelsson@alm.se",
+         "role": "Projektledare",
+         "password": "Emma2106",
+         "authorized": true
+      },
+	  {
+         "name": "Fredrik Sandberg",
+         "id-number": "AB3256",
+         "email": "fredrik.sandberg@alm.se",
+         "role": "telefonist",
+         "password": "Fred4232",
+         "authorized": true
+      },
+	  {
+         "name": "Elin Danielsson",
+         "id-number": "AB54584",
+         "email": "elin.danielsson@alm.se",
+         "role": "Konsult",
+         "password": "Elin3254",
+         "authorized": true
+      },
+	  {
+         "name": "Peter Holm",
+         "id-number": "AB1386",
+         "email": "peter.holm@alm.se",
+         "role": "Servicechef",
+         "password": "Blue4390",
+         "authorized": true
+      },
+	  {
+         "name": "Sofia Lindqvist",
+         "id-number": "AB6756",
+         "email": "sofia.lindqvist@alm.se",
+         "role": "Administratör",
+         "password": "Dark53430",
+         "authorized": true
+      },
+	  {
+         "name": "Johan Eriksson",
+         "id-number": "AB2284",
+         "email": "johan.eriksson@alm.se",
+         "role": "Säljare",
+         "password": "Joh8880",
+         "authorized": true
+      },
+	  {
+         "name": "Hans Pettersson",
+         "id-number": "AB2284",
+         "email": "hans.pettersson@alm.se",
+         "role": "Konsult",
+         "password": "Hans6758",
+         "authorized": true
+      },
+	  {
+         "name": "Mikael Sundberg",
+         "id-number": "AB3503",
+         "email": "mikael.sundberg@alm.se",
+         "role": "Servicetekniker",
+         "password": "Gold2118",
+         "authorized": true
+      },
+	  {
+         "name": "Eva Ekström",
+         "id-number": "AB5487",
+         "email": "eva.ekström@alm.se",
+         "role": "Projektledare",
+         "password": "Melon2089",
+         "authorized": true
+      },
+	  {
+         "name": "Alexander Nordström",
+         "id-number": "AB2284",
+         "email": "alexander.nordström@alm.se",
+         "role": "Servicechef",
+         "password": "Alex4349",
+         "authorized": true
+      },
+	  {
+         "name": "Helena Andreasson",
+         "id-number": "AB8684",
+         "email": "Helena.andreasson@alm.se",
+         "role": "Säljare",
+         "password": "Hele7608",
+         "authorized": true
+      },
+	  {
+         "name": "Anders Lund",
+         "id-number": "AB342",
+         "email": "anders.lund@alm.se",
+         "role": "Receptionist",
+         "password": "Sea6554",
+         "authorized": true
+      }
+	  
+	
 ]}

@@ -8,4 +8,176 @@
          "type": "mellan",
          "model": "Volvo V60"
       },
+	  {
+         "registration": "MLB536",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "april",
+         "type": "stor",
+         "model": "Honda CR-V"
+      },
+	  {
+         "registration": "MLB876",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "mars",
+         "type": "skåpbil",
+         "model": "Partner Skåp 1,6 BlueHDI"
+      },
+	  {
+         "registration": "MLB543",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "januari",
+         "type": "liten",
+         "model": "Opel ADAM"
+      },
+	  {
+         "registration": "MLB676",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "april",
+         "type": "stor",
+         "model": "Kia Carnival"
+      },
+	  {
+         "registration": "MLB954",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "januari",
+         "type": "mellan",
+         "model": "Ford Focus"
+      },
+	  {
+         "registration": "MLB703",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "mars",
+         "type": "tjänstebil",
+         "model": "Volvo XC70"
+      },
+	  {
+         "registration": "MLB559",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "april",
+         "type": "servicebil",
+         "model": "Ford Ranger"
+      },
+	  {
+         "registration": "MLB340",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "mars",
+         "type": "liten",
+         "model": "Opel Karl"
+      },
+	  {
+         "registration": "MLB640",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "januari",
+         "type": "Skåpbil",
+         "model": "Opel Movano Combi"
+      },
+	  {
+         "registration": "MLB421",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "april",
+         "type": "mellan",
+         "model": "Volvo S60"
+      },
+	  {
+         "registration": "MLB027",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "mars",
+         "type": "tjänstebil",
+         "model": "Ford Galaxy"
+      },
+	  {
+         "registration": "MLB643",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "januari",
+         "type": "skåpbil",
+         "model": "Opel Vivaro"
+      },
+	  {
+         "registration": "MLB003",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "april",
+         "type": "mellan",
+         "model": "Volvo S90"
+      },
+	  {
+         "registration": "MLB823",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "januari",
+         "type": "stor",
+         "model": "Ford Mondeo"
+      },
+	  {
+         "registration": "MLB430",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "mars",
+         "type": "servicebil",
+         "model": "Opel Combo skåp"
+      },
+	  {
+         "registration": "MLB043",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "april",
+         "type": "liten",
+         "model": "Ford Ka"
+      },
+	  {
+         "registration": "MLB740",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "januari",
+         "type": "mellan",
+         "model": "Volvo V70"
+      },
+	  {
+         "registration": "MLB214",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "mars",
+         "type": "liten",
+         "model": "Ford B-Max"
+      },
+	  {
+         "registration": "MLB603",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "april",
+         "type": "tjänstebil",
+         "model": "Opel Movano Combi"
+      }
+
 ]}
