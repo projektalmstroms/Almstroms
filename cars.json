@@ -126,58 +126,238 @@
          "model": "Volvo S90"
       },
 	  {
-         "registration": "MLB823",
+         "registration": "KLM345",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "maj",
+         "type": "liten",
+         "model": "Mitsubishi Space Star"
+      },
+	  {
+         "registration": "KLM123",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "juni",
+         "type": "mellan",
+         "model": "Dacia Sandero"
+      },
+	  {
+         "registration": "HBA289",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "juli",
+         "type": "stor",
+         "model": "Dacia Duster"
+      },
+	  {
+         "registration": "HBA101",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "augusti",
+         "type": "servicebil",
+         "model": "Nissan Note"
+      },
+	  {
+         "registration": "KSE267",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "september",
+         "type": "skåpbil",
+         "model": "Opel Combo"
+      },
+	  {
+         "registration": "PHJ456",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "oktober",
+         "type": "tjänstebil",
+         "model": "Skoda Fabia Combi"
+      }
+      {
+         "registration": "HJK890",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "november",
+         "type": "liten",
+         "model": "Ford Ka"
+      },
+     {
+         "registration": "GHJ678",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "december",
+         "type": "mellan",
+         "model": "Seat Toledo"
+      },
+     {
+         "registration": "BKL345",
          "gearbox": "manuell",
          "fuel": "diesel",
          "inspected": true,
          "service": "januari",
          "type": "stor",
-         "model": "Ford Mondeo"
+         "model": "Skoda Fabia Combi"
       },
-	  {
-         "registration": "MLB430",
+     {
+         "registration": "MNB098",
          "gearbox": "automat",
          "fuel": "bensin",
          "inspected": true,
-         "service": "mars",
+         "service": "februari",
          "type": "servicebil",
-         "model": "Opel Combo skåp"
+         "model": "Mitsubishi L200"
       },
-	  {
-         "registration": "MLB043",
+     {
+         "registration": "DFG678",
          "gearbox": "manuell",
          "fuel": "diesel",
          "inspected": true,
-         "service": "april",
-         "type": "liten",
-         "model": "Ford Ka"
+         "service": "mars",
+         "type": "skåpbil",
+         "model": "Opel Combo"
       },
-	  {
-         "registration": "MLB740",
+     {
+         "registration": "CVB234",
          "gearbox": "automat",
          "fuel": "bensin",
+         "inspected": true,
+         "service": "april",
+         "type": "liten",
+         "model": "Nissan Micra"
+      },
+     {
+         "registration": "BNM123",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "maj",
+         "type": "mellan",
+         "model": "Kia Optima"
+      },
+     {
+         "registration": "JKL579",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "juni",
+         "type": "stor",
+         "model": "Opel Mokka"
+      },
+     {
+         "registration": "IOP123",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "juli",
+         "type": "servicebil",
+         "model": "Nissan Navara"
+      },
+     {
+         "registration": "HJK098",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "augusti",
+         "type": "skåpbil",
+         "model": "Opel Movano"
+      },
+     {
+         "registration": "GHJ543",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "september",
+         "type": "tjänstebil",
+         "model": "Volvo S60"
+      },
+     {
+         "registration": "TYU789",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "oktober",
+         "type": "liten",
+         "model": "Kia Picanto"
+      },
+     {
+         "registration": "ASD462",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "november",
+         "type": "mellan",
+         "model": "Volvo S90"
+      },
+     {
+         "registration": "FGH518",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "december",
+         "type": "stor",
+         "model": "Ford Focus"
+      },
+     {
+         "registration": "PÅK160",
+         "gearbox": "manuell",
+         "fuel": "diesel",
          "inspected": true,
          "service": "januari",
-         "type": "mellan",
-         "model": "Volvo V70"
+         "type": "servicebil",
+         "model": "Volkswagen Amarok"
       },
-	  {
-         "registration": "MLB214",
+     {
+         "registration": "DFG652",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "februari",
+         "type": "skåpbil",
+         "model": "Opel Combo skåp"
+      },
+     {
+         "registration": "KLO531",
          "gearbox": "manuell",
          "fuel": "diesel",
          "inspected": true,
          "service": "mars",
-         "type": "liten",
-         "model": "Ford B-Max"
+         "type": "tjänstebil",
+         "model": "Audi A3"
       },
-	  {
-         "registration": "MLB603",
+     {
+         "registration": "JHY610",
          "gearbox": "automat",
          "fuel": "bensin",
          "inspected": true,
          "service": "april",
-         "type": "tjänstebil",
-         "model": "Opel Movano Combi"
+         "type": "liten",
+         "model": "Fiat Panda"
+      },
+     {
+         "registration": "UIL953",
+         "gearbox": "manuell",
+         "fuel": "diesel",
+         "inspected": true,
+         "service": "maj",
+         "type": "mellan",
+         "model": "Renault Clio"
+      },
+     {
+         "registration": "GBT564",
+         "gearbox": "automat",
+         "fuel": "bensin",
+         "inspected": true,
+         "service": "juni",
+         "type": "stor",
+         "model": "Lada Niva"
       }
 
 ]}
