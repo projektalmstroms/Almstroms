@@ -142,7 +142,30 @@
          "role": "Receptionist",
          "password": "Sea6554",
          "authorized": true
+      },
+	  {
+         "name": "Jan Åström",
+         "id-number": "AB970",
+         "email": "jan.astrom@alm.se",
+         "role": "Administratör",
+         "password": "Sun3432",
+         "authorized": true
+      },
+	  {
+         "name": "Kerstin Stenberg",
+         "id-number": "AB342",
+         "email": "kerstin.stenberg@alm.se",
+         "role": "Konsult",
+         "password": "Red6080",
+         "authorized": true
+      },
+	  {
+         "name": "Oscar Lindahl",
+         "id-number": "AB342",
+         "email": "oscar.lindahl@alm.se",
+         "role": "Servicetekniker",
+         "password": "Gray0874",
+         "authorized": true
       }
-	  
 	
 ]}
