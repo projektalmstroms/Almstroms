@@ -1,5 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+   div.container
+      if appUser.length == 1
+         h1 Logga ut
+         form(action="/logout" method='post' id='logout')
+            button(type='submit') Logga ut
+      else
+         h1 Logga in
+         form(action="/login" method="post" id='loginform')
+            div
+               input(type="username" name="username" id="uname" placeholder="Användarnamn" required)
+            div
+               input(type="password" name="password" id ="pword" placeholder="Lösenord" required)
+            div
+               button(type="submit") Logga in 
