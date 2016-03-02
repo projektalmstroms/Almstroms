@@ -1,12 +1,12 @@
 var express = require('express');
 var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var booking = require('./routes/booking');
+var carsData = __dirname + '/cars.json';
+var userData = __dirname + '/user.json';
+var readFile = require('./readfiles');
 
 var list = require('./routes/list');
 
@@ -14,6 +14,7 @@ var booking = require('./routes/booking');
 
 
 var app = express();
+app.locals.appUser = "";
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -21,14 +22,33 @@ app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/booking', booking);
+
+app.post('/login', function (req, res) {
+
+   readFile.readJson(userData, loginUser);
+
+   function loginUser(data){
+      app.locals.appUser = data.users.filter(function(user){
+         return user.email == req.body.username && req.body.password == user.password;
+      });
+      if (app.locals.appUser.length == 1) {
+         res.writeHead(302,{'Location':'/booking'});
+         res.end();
+      }
+      else {
+         // res.render(__dirname + '/views/fellogin');
+         console.log('wrong password');
+      }
+      console.log(app.locals.appUser);
+   }
+});
 
 app.use('/list', list);
 

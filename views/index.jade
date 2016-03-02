@@ -1,9 +1,17 @@
 extends layout
 
 block content
-	div.container
-		h1 Almströms Bilpool
-		form(action="/bokabil" method="post" id='loginform')
-			input(type="username" name="username" id="uname" placeholder="Användarnamn")
-			input(type="password" name="password" id ="pword" 	placeholder="Lösenord")
-			input(type="submit" class="btn btn-primary btn-block" value="Logga in")
+   div.container
+      if appUser.length == 1
+         h1 Logga ut
+         form(action="/logout" method='post' id='logout')
+            button(type='submit') Logga ut
+      else
+         h1 Almströms Bilpool
+         form(action="/login" method="post" id='loginform')
+            div
+               input(type="username" name="username" id="uname" placeholder="Användarnamn" required)
+            div
+               input(type="password" name="password" id ="pword" placeholder="Lösenord" required)
+            div
+               button(type="submit") Logga in 

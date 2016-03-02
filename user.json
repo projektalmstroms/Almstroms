@@ -168,14 +168,6 @@
          "authorized": true
       },
       {
-         "name": "Sara Kristallsand",
-         "id-number": "AB2274",
-         "email": "sara.kristallsand@alm.se",
-         "role": "Projektledare",
-         "password": "Pink4544",
-         "authorized": true
-      },
-      {
          "name": "Hugo Bergvall",
          "id-number": "AA0001",
          "email": "hugo.bergvall@alm.se",
