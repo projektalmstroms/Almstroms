@@ -6,3 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
+ 
+th{
+	font-family: sans-serif;
+	font-size: 20px;
+}
