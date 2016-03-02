@@ -8,6 +8,11 @@ var carsData = __dirname + '/cars.json';
 var userData = __dirname + '/user.json';
 var readFile = require('./readfiles');
 
+var list = require('./routes/list');
+
+var booking = require('./routes/booking');
+
+
 var app = express();
 app.locals.appUser = "";
 
@@ -44,6 +49,11 @@ app.post('/login', function (req, res) {
       console.log(app.locals.appUser);
    }
 });
+
+app.use('/list', list);
+
+app.use('/booking', booking);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
