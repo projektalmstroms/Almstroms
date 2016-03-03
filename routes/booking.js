@@ -65,8 +65,10 @@ router.get('/', function(req, res, next) {
 		
 		res.render('booking', { 
 	  title: 'cars', 
-	  carArray: req.list
-  		
+	  carArray: req.list,
+	  dateStart: req.query.startdate,
+	  dateEnd: req.query.enddate,
+		
    });
 
 });
