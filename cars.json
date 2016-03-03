@@ -1,7 +1,7 @@
 { "cars":[
       {
          "registration": "MLB823",
-         "gearbox": "manuell",
+         "gearbox": "automat",
          "fuel": "diesel",
          "inspected": true,
          "service": "januari",
@@ -19,7 +19,7 @@
       },
 	  {
          "registration": "MLB876",
-         "gearbox": "manuell",
+         "gearbox": "automat",
          "fuel": "diesel",
          "inspected": true,
          "service": "mars",
@@ -28,7 +28,7 @@
       },
 	  {
          "registration": "MLB543",
-         "gearbox": "automat",
+         "gearbox": "manuell",
          "fuel": "bensin",
          "inspected": true,
          "service": "januari",
@@ -46,7 +46,7 @@
       },
 	  {
          "registration": "MLB954",
-         "gearbox": "automat",
+         "gearbox": "manuell",
          "fuel": "bensin",
          "inspected": true,
          "service": "januari",
@@ -64,7 +64,7 @@
       },
 	  {
          "registration": "MLB559",
-         "gearbox": "automat",
+         "gearbox": "manuell",
          "fuel": "bensin",
          "inspected": true,
          "service": "april",
@@ -73,7 +73,7 @@
       },
 	  {
          "registration": "MLB340",
-         "gearbox": "manuell",
+         "gearbox": "automat",
          "fuel": "diesel",
          "inspected": true,
          "service": "mars",
@@ -109,7 +109,7 @@
       },
 	  {
          "registration": "MLB643",
-         "gearbox": "manuell",
+         "gearbox": "automat",
          "fuel": "diesel",
          "inspected": true,
          "service": "januari",
@@ -127,7 +127,7 @@
       },
 	  {
          "registration": "KLM345",
-         "gearbox": "manuell",
+         "gearbox": "automat",
          "fuel": "diesel",
          "inspected": true,
          "service": "maj",
@@ -154,7 +154,7 @@
       },
 	  {
          "registration": "HBA101",
-         "gearbox": "automat",
+         "gearbox": "manuell",
          "fuel": "bensin",
          "inspected": true,
          "service": "augusti",
@@ -190,7 +190,7 @@
       },
      {
          "registration": "GHJ678",
-         "gearbox": "automat",
+         "gearbox": "manuell",
          "fuel": "bensin",
          "inspected": true,
          "service": "december",
@@ -208,7 +208,7 @@
       },
      {
          "registration": "MNB098",
-         "gearbox": "automat",
+         "gearbox": "manuell",
          "fuel": "bensin",
          "inspected": true,
          "service": "februari",
@@ -235,7 +235,7 @@
       },
      {
          "registration": "BNM123",
-         "gearbox": "manuell",
+         "gearbox": "automat",
          "fuel": "diesel",
          "inspected": true,
          "service": "maj",
@@ -253,7 +253,7 @@
       },
      {
          "registration": "IOP123",
-         "gearbox": "manuell",
+         "gearbox": "automat",
          "fuel": "diesel",
          "inspected": true,
          "service": "juli",

@@ -52,7 +52,7 @@ app.post('/login', function (req, res) {
 
 app.post('/booking', function (req, res){
   console.log(req.body)
-  res.end()
+  res.end();
 });
 
 app.use('/list', list);
