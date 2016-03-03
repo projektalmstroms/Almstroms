@@ -1,24 +1,23 @@
 extends layout
 block content
-   h1= title
-      table(border='1')
-         thead
-            tr
-               th Fordon
-               th Reg.nr
-               th Växellåda
-               th Drivmedel
-               th Besiktigad
-               th Service
-               th Fordonstyp
-         tbody			   
-            each item,index in obj		
-               tr
-                  td= item.model
-                  td= item.registration
-                  td= item.gearbox
-                  td= item.fuel
-                  td= item.inspected
-                  td= item.service
-                  td= item.type
-    
+	h1= title
+	table(border='1')
+		thead
+			tr
+				th Fordon
+				th Reg.nr
+				th Växellåda
+				th Drivmedel
+				th Besiktigad
+				th Service
+				th Fordonstyp
+		
+			each item, index in carArray	
+				tr
+					td= item.model
+					td= item.registration
+					td= item.gearbox
+					td= item.fuel
+					td= item.inspected
+					td= item.service
+					td= item.type	    

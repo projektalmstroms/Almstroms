@@ -50,6 +50,11 @@ app.post('/login', function (req, res) {
    }
 });
 
+app.post('/booking', function (req, res){
+  console.log(req.body)
+  res.end()
+});
+
 app.use('/list', list);
 
 app.use('/booking', booking);
