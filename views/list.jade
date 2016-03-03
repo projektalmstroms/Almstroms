@@ -1,25 +1,28 @@
 extends layout
 block content
 	h1= title
-	table(border='1')
-		thead
-			tr
-				th Fordon
-				th Reg.nr
-				th Växellåda
-				th Drivmedel
-				th Besiktigad
-				th Service
-				th Fordonstyp
-
-		
-			each item, index in carArray	
+	form(action="/confirmation" method="post" id="list")
+		table(border='1')
+			thead
 				tr
-					td= item.model
-					td= item.registration
-					td= item.gearbox
-					td= item.fuel
-					td= item.inspected
-					td= item.service
-					td= item.type	
-					    
+					th Fordon
+					th Reg.nr
+					th Växellåda
+					th Drivmedel
+					th Besiktigad
+					th Service
+					th Fordonstyp
+					th Boka
+			
+				each item, index in carArray	
+					tr
+						td= item.model
+						td= item.registration
+						td= item.gearbox
+						td= item.fuel
+						td= item.inspected
+						td= item.service
+						td= item.type
+						td
+							input(type="radio" name="book" value="[#{item.registration}, #{item.model}, #{dateStart}, #{dateEnd}]") 
+		input(type="submit" class="btn btn-primary btn-block" value="Boka")

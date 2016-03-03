@@ -7,10 +7,9 @@ var booking = require('./routes/booking');
 var carsData = __dirname + '/cars.json';
 var userData = __dirname + '/user.json';
 var readFile = require('./readfiles');
-
 var list = require('./routes/list');
-
 var booking = require('./routes/booking');
+var confirmation = require('./routes/confirmation');
 
 
 var app = express();
@@ -29,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/booking', booking);
+app.use('/confirmation', confirmation);
 
 app.post('/login', function (req, res) {
 
@@ -50,9 +50,8 @@ app.post('/login', function (req, res) {
    }
 });
 
-app.post('/booking', function (req, res){
-  console.log(req.body)
-  res.end();
+app.post('/confirmation', function (req, res){
+  res.send(req.body)
 });
 
 app.use('/list', list);
