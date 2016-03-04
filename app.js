@@ -10,7 +10,7 @@ var readFile = require('./readfiles');
 var list = require('./routes/list');
 var booking = require('./routes/booking');
 var confirmation = require('./routes/confirmation');
-
+var newCar = require('./routes/newcar');
 
 var app = express();
 app.locals.appUser = "";
@@ -28,7 +28,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/booking', booking);
+app.use('/list', list);
 app.use('/confirmation', confirmation);
+app.use('/newcar', newCar);
 
 app.post('/login', function (req, res) {
 
@@ -54,10 +56,28 @@ app.post('/confirmation', function (req, res){
   res.send(req.body)
 });
 
-app.use('/list', list);
+// check registration number
+app.post('/newcar', function (req, res) {
+  var checkedReg = data.users.filter(function (reg){
+    return reg.registration == req.body.registration;
+  })
+  if (checkedReg.length == 1) {
+    res.render(__dirname + '/views/newcar')
+  }
+})
 
-app.use('/booking', booking);
-
+// add new car
+app.post('/newcar', function (req, res) {
+  var newCar = {
+    registration: req.body.registration,
+    gearbox: req.body.gearbox,
+    fuel: req.body.fuel,
+    service: req.body.service,
+    type: req.body.type,
+    model: req.body.model,
+  } 
+  console.log(newCar);
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
