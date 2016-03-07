@@ -10,8 +10,6 @@ router.post('/',function(req,res,next){
    readFile.readJson(user,listUser);
    function listUser(data){
       var arr = data.users;
-      JSON.stringify(newUser);
-      console.log(newUser);
       arr.push(newUser);
       console.log(newUser);
    }
