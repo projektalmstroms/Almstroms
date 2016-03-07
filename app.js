@@ -57,12 +57,22 @@ app.post('/confirmation', function (req, res){
 });
 
 // check registration number
-app.post('/newcar', function (req, res) {
+app.post('/newcar', function (req, res, next) {
+
+  readFile.readJson(carsData, carReg);
+  
+  function carReg(data){
   var checkedReg = data.users.filter(function (reg){
     return reg.registration == req.body.registration;
   })
   if (checkedReg.length == 1) {
     res.render(__dirname + '/views/newcar')
+  }
+  else {
+    console.log('it´s done!');
+    next()
+  }
+
   }
 })
 
