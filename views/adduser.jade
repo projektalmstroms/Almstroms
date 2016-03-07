@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1= title
+	form(action="/adduser" method="post" id='newuser')
+		p Ditt namn är:#{user.name}
+		p Ditt anställningsnummer är:#{user['id-number']}
+		p Din email är:#{user.email}
+		p Din yrkesroll är:#{user.role}
+		p Ditt lösenord är:#{user.password}

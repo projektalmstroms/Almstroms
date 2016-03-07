@@ -10,6 +10,9 @@ var readFile = require('./readfiles');
 var list = require('./routes/list');
 var booking = require('./routes/booking');
 var confirmation = require('./routes/confirmation');
+var newuser = require('./routes/newuser');
+var adduser = require('./routes/adduser');
+
 
 
 var app = express();
@@ -29,7 +32,15 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/booking', booking);
 app.use('/confirmation', confirmation);
+app.use('/newuser', newuser);
+app.use('/adduser', adduser);
 
+
+
+app.post('/newuser', function (req, res){
+  res.send(req.body)
+
+});
 app.post('/login', function (req, res) {
 
    readFile.readJson(userData, loginUser);
@@ -54,9 +65,12 @@ app.post('/confirmation', function (req, res){
   res.send(req.body)
 });
 
+
+
 app.use('/list', list);
 
 app.use('/booking', booking);
+
 
 
 // catch 404 and forward to error handler
