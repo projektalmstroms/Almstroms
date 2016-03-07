@@ -54,38 +54,6 @@ app.post('/login', function (req, res) {
    }
 });
 
-// check registration number
-app.post('/newcar', function (req, res, next) {
-
-  readFile.readJson(carsData, carReg);
-
-  function carReg(data){
-  var checkedReg = data.users.filter(function (reg){
-    return reg.registration == req.body.registration;
-  })
-  if (checkedReg.length == 1) {
-    res.render(__dirname + '/views/newcar')
-  }
-  else {
-    console.log('it´s done!');
-    next()
-  }
-
-  }
-})
-
-// add new car
-app.post('/newcar', function (req, res) {
-  var newCar = {
-    registration: req.body.registration,
-    gearbox: req.body.gearbox,
-    fuel: req.body.fuel,
-    service: req.body.service,
-    type: req.body.type,
-    model: req.body.model,
-  }
-  console.log(newCar);
-});
 
 app.post('/logout',function(req,res){
    app.locals.appUser = "";
