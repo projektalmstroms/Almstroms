@@ -4,8 +4,14 @@ html
    title= title
    link(rel='stylesheet', href='/stylesheets/style.css')
    body
-      if appUser.length == 1
-         p Du är inloggad som #{appUser[0].name}
+      .wrapper
+         nav 
+            ul
+               li
+                  a(href="/") Logga in
+               li
+                  a(href="/booking") Boka bil
+                  if appUser.length == 1
+                     li(id="logger") Du är inloggad som #{appUser[0].name}
       
-   block content
-      
+         block content

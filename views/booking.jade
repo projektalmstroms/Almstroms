@@ -1,39 +1,39 @@
 extends layout
 
 block content
-	.container
-		h1 Välj bil
-		p Välj datum:
-		form(action="/booking" method="get" id='date')
-			input(type="date" name="startdate" id="start")
-			input(type="date" name="enddate" id ="end")
-			br
-			p Typ av bil:
-			label Liten
-				input(type="checkbox" name="fordonstyp" value="liten")  
-			label Mellan
-				input(type="checkbox" name="fordonstyp" value="mellan")  
-			label Stor
-				input(type="checkbox" name="fordonstyp" value="stor")  
-			label Servicebil
-				input(type="checkbox" name="fordonstyp" value="servicebil")   
-			label Skåpbil
-				input(type="checkbox" name="fordonstyp" value="skapbil")  
-			label Tjänstebil
-				input(type="checkbox" name="fordonstyp" value="tjanstebil")  
-			br
-			p Bränsle:
-			label Bensin
-				input(type="radio" name="bransletyp" value="bensin") 
-			label Diesel
-				input(type="radio" name="bransletyp" value="diesel") 
-			br
-			p Växellåda:
-			label Manuell
-				input(type="radio" name="vaxellada" value="manuell") 
-			label Automat
-				input(type="radio" name="vaxellada" value="automat") 
-			br
-			input(type="submit" class="btn btn-primary btn-block" value="Sök bil")
-
-		include list.jade
+   .container
+      h1 Välj bil
+      p Välj datum:
+      form(action="/booking" method="get" id='date')
+         input(type="date" name="startdate" id="start" required)
+         input(type="date" name="enddate" id ="end" required)
+         br
+         p Typ av bil:
+         label Liten
+            input(type="checkbox" name="fordonstyp" value="liten")  
+         label Mellan
+            input(type="checkbox" name="fordonstyp" value="mellan")  
+         label Stor
+            input(type="checkbox" name="fordonstyp" value="stor")  
+         label Servicebil
+            input(type="checkbox" name="fordonstyp" value="servicebil")   
+         label Skåpbil
+            input(type="checkbox" name="fordonstyp" value="skapbil")  
+         label Tjänstebil
+            input(type="checkbox" name="fordonstyp" value="tjanstebil")  
+         br
+         p Bränsle:
+         label Bensin
+            input(type="checkbox" name="bransletyp" value="bensin") 
+         label Diesel
+            input(type="checkbox" name="bransletyp" value="diesel") 
+         br
+         p Växellåda:
+         label Manuell
+            input(type="checkbox" name="vaxellada" value="manuell") 
+         label Automat
+            input(type="checkbox" name="vaxellada" value="automat") 
+         br
+         input(type="submit" class="btn btn-primary btn-block" value="Sök bil")
+      if allDays && allDays.length > 0
+         include list.jade

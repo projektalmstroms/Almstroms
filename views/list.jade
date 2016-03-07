@@ -1,7 +1,8 @@
-extends layout
-block content
-	h1= title
+if tooMany
+	h4 Maxgränsen för en bokning är sju dagar.
+else
 	form(action="/confirmation" method="post" id="list")
+		p Du har #{carArray.length} bilar att välja på.
 		table(border='1')
 			thead
 				tr
@@ -13,7 +14,6 @@ block content
 					th Service
 					th Fordonstyp
 					th Boka
-			
 				each item, index in carArray	
 					tr
 						td= item.model
@@ -24,5 +24,5 @@ block content
 						td= item.service
 						td= item.type
 						td
-							input(type="radio" name="book" value="[#{item.registration}, #{item.model}, #{dateStart}, #{dateEnd}]") 
+							input(type="radio" name="book" value="#{item.registration},#{item.model},#{allDays}" required) 
 		input(type="submit" class="btn btn-primary btn-block" value="Boka")
