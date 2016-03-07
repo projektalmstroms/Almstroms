@@ -1,0 +1,72 @@
+{
+    "bookings": [
+        {
+            "userID": "AB2274",
+            "orders": [
+                {
+                    "car": "CIA012",
+                    "model": "Volvo V60",
+                    "start": "2016-03-10",
+                    "end": "2016-03-15"
+                },
+                {
+                    "car": "KGB007",
+                    "model": "Volvo XC90",
+                    "start": "2016-04-20",
+                    "end": "2016-04-22"
+                },
+                {
+                    "car": "CIA012",
+                    "model": "Volvo V60",
+                    "start": "2016-04-15",
+                    "end": "2016-04-21"
+                },
+                {
+                    "car": "CIA011",
+                    "model": "Audi A3",
+                    "start": "2016-03-10",
+                    "end": "2016-03-15"
+                }
+            ]
+        },
+        {
+            "userID": "AB5034",
+            "orders": [
+                {
+                    "car": "KSE267",
+                    "model": "Opel Combo",
+                    "start": "2016-04-13",
+                    "end": "2016-04-14"
+                },
+                {
+                    "car": "DFG652",
+                    "model": "Opel Combo skåp",
+                    "start": "2016-05-04",
+                    "end": "2016-05-06"
+                }
+            ]
+        },
+        {
+            "userID": "AA0015",
+            "orders": [
+                {
+                    "car": "HBA289",
+                    "model": "Dacia Duster",
+                    "start": "2016-05-19",
+                    "end": "2016-05-20"
+                }
+            ]
+        },
+        {
+            "userID": "AA0017",
+            "orders": [
+                {
+                    "car": "MLB421",
+                    "model": "Volvo S60",
+                    "start": "2016-06-08",
+                    "end": "2016-06-08"
+                }
+            ]
+        }
+    ]
+}

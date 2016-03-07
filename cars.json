@@ -360,15 +360,6 @@
          "model": "Lada Niva"
       },
       {
-         "registration": "MLB823",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "januari",
-         "type": "mellan",
-         "model": "Volvo V60"
-      },
-      {
          "registration": "KGB001",
          "gearbox": "automat",
          "fuel": "bensin",
