@@ -12,8 +12,6 @@ var booking = require('./routes/booking');
 var confirmation = require('./routes/confirmation');
 var newuser = require('./routes/newuser');
 var adduser = require('./routes/adduser');
-
-
 var newCar = require('./routes/newcar');
 
 var app = express();
