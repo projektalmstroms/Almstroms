@@ -10,8 +10,14 @@ router.post('/',function(req,res,next){
    readFile.readJson(user,listUser);
    function listUser(data){
       var arr = data.users;
+      newUser.authorized = false
       arr.push(newUser);
       console.log(newUser);
+       fs.writeFile(user, JSON.stringify(data,null,4),function(error){
+         if(error){
+            return console.log(error);
+         }
+      });
    }
    next();
 });
