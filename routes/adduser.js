@@ -13,11 +13,7 @@ router.post('/',function(req,res,next){
       JSON.stringify(newUser);
       console.log(newUser);
       arr.push(newUser);
-      // fs.writeFile(user, JSON.stringify(data,null,4),function(error){
-      //    if(error){
-      //       return console.log(error);
-      //    }
-      // });
+      console.log(newUser);
    }
    next();
 });
