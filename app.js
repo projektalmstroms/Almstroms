@@ -54,6 +54,11 @@ app.post('/login', function (req, res) {
    }
 });
 
+app.post('/logout',function(req,res){
+   app.locals.appUser = "";
+   res.writeHead(302,{'Location':'/'});
+   res.end();
+});
 
 app.get('/*',function(req,res,next){
    if(app.locals.appUser.length == 1){
@@ -64,8 +69,6 @@ app.get('/*',function(req,res,next){
       res.end();
    }
 });
-
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

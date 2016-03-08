@@ -1,578 +1,580 @@
-{ "cars":[
-      {
-         "registration": "MLB823",
-         "gearbox": "automat",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "januari",
-         "type": "mellan",
-         "model": "Volvo V60"
-      },
-	  {
-         "registration": "MLB536",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "april",
-         "type": "stor",
-         "model": "Honda CR-V"
-      },
-	  {
-         "registration": "MLB876",
-         "gearbox": "automat",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "mars",
-         "type": "skåpbil",
-         "model": "Partner Skåp 1,6 BlueHDI"
-      },
-	  {
-         "registration": "MLB543",
-         "gearbox": "manuell",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "januari",
-         "type": "liten",
-         "model": "Opel ADAM"
-      },
-	  {
-         "registration": "MLB676",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "april",
-         "type": "stor",
-         "model": "Kia Carnival"
-      },
-	  {
-         "registration": "MLB954",
-         "gearbox": "manuell",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "januari",
-         "type": "mellan",
-         "model": "Ford Focus"
-      },
-	  {
-         "registration": "MLB703",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "mars",
-         "type": "tjänstebil",
-         "model": "Volvo XC70"
-      },
-	  {
-         "registration": "MLB559",
-         "gearbox": "manuell",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "april",
-         "type": "servicebil",
-         "model": "Ford Ranger"
-      },
-	  {
-         "registration": "MLB340",
-         "gearbox": "automat",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "mars",
-         "type": "liten",
-         "model": "Opel Karl"
-      },
-	  {
-         "registration": "MLB640",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "januari",
-         "type": "Skåpbil",
-         "model": "Opel Movano Combi"
-      },
-	  {
-         "registration": "MLB421",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "april",
-         "type": "mellan",
-         "model": "Volvo S60"
-      },
-	  {
-         "registration": "MLB027",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "mars",
-         "type": "tjänstebil",
-         "model": "Ford Galaxy"
-      },
-	  {
-         "registration": "MLB643",
-         "gearbox": "automat",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "januari",
-         "type": "skåpbil",
-         "model": "Opel Vivaro"
-      },
-	  {
-         "registration": "MLB003",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "april",
-         "type": "mellan",
-         "model": "Volvo S90"
-      },
-	  {
-         "registration": "KLM345",
-         "gearbox": "automat",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "maj",
-         "type": "liten",
-         "model": "Mitsubishi Space Star"
-      },
-	  {
-         "registration": "KLM123",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "juni",
-         "type": "mellan",
-         "model": "Dacia Sandero"
-      },
-	  {
-         "registration": "HBA289",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "juli",
-         "type": "stor",
-         "model": "Dacia Duster"
-      },
-	  {
-         "registration": "HBA101",
-         "gearbox": "manuell",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "augusti",
-         "type": "servicebil",
-         "model": "Nissan Note"
-      },
-	  {
-         "registration": "KSE267",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "september",
-         "type": "skåpbil",
-         "model": "Opel Combo"
-      },
-	  {
-         "registration": "PHJ456",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "oktober",
-         "type": "tjänstebil",
-         "model": "Skoda Fabia Combi"
-      },
-      {
-         "registration": "HJK890",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "november",
-         "type": "liten",
-         "model": "Ford Ka"
-      },
-     {
-         "registration": "GHJ678",
-         "gearbox": "manuell",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "december",
-         "type": "mellan",
-         "model": "Seat Toledo"
-      },
-     {
-         "registration": "BKL345",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "januari",
-         "type": "stor",
-         "model": "Skoda Fabia Combi"
-      },
-     {
-         "registration": "MNB098",
-         "gearbox": "manuell",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "februari",
-         "type": "servicebil",
-         "model": "Mitsubishi L200"
-      },
-     {
-         "registration": "DFG678",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "mars",
-         "type": "skåpbil",
-         "model": "Opel Combo"
-      },
-     {
-         "registration": "CVB234",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "april",
-         "type": "liten",
-         "model": "Nissan Micra"
-      },
-     {
-         "registration": "BNM123",
-         "gearbox": "automat",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "maj",
-         "type": "mellan",
-         "model": "Kia Optima"
-      },
-     {
-         "registration": "JKL579",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "juni",
-         "type": "stor",
-         "model": "Opel Mokka"
-      },
-     {
-         "registration": "IOP123",
-         "gearbox": "automat",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "juli",
-         "type": "servicebil",
-         "model": "Nissan Navara"
-      },
-     {
-         "registration": "HJK098",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "augusti",
-         "type": "skåpbil",
-         "model": "Opel Movano"
-      },
-     {
-         "registration": "GHJ543",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "september",
-         "type": "tjänstebil",
-         "model": "Volvo S60"
-      },
-     {
-         "registration": "TYU789",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "oktober",
-         "type": "liten",
-         "model": "Kia Picanto"
-      },
-     {
-         "registration": "ASD462",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "november",
-         "type": "mellan",
-         "model": "Volvo S90"
-      },
-     {
-         "registration": "FGH518",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "december",
-         "type": "stor",
-         "model": "Ford Focus"
-      },
-     {
-         "registration": "PÅK160",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "januari",
-         "type": "servicebil",
-         "model": "Volkswagen Amarok"
-      },
-     {
-         "registration": "DFG652",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "februari",
-         "type": "skåpbil",
-         "model": "Opel Combo skåp"
-      },
-     {
-         "registration": "KLO531",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "mars",
-         "type": "tjänstebil",
-         "model": "Audi A3"
-      },
-     {
-         "registration": "JHY610",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "april",
-         "type": "liten",
-         "model": "Fiat Panda"
-      },
-     {
-         "registration": "UIL953",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "maj",
-         "type": "mellan",
-         "model": "Renault Clio"
-      },
-     {
-         "registration": "GBT564",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "juni",
-         "type": "stor",
-         "model": "Lada Niva"
-      },
-      {
-         "registration": "KGB001",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "februari",
-         "type": "mellan",
-         "model": "Volvo V60"
-      },
-      {
-         "registration": "KGB002",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "februari",
-         "type": "mellan",
-         "model": "Volvo V60"
-      },
-      {
-         "registration": "KGB003",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "mars",
-         "type": "mellan",
-         "model": "Volvo V60"
-      },
-      {
-         "registration": "KGB004",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "mars",
-         "type": "stor",
-         "model": "Volvo XC90"
-      },
-      {
-         "registration": "KGB005",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "april",
-         "type": "stor",
-         "model": "Volvo XC90"
-      },
-      {
-         "registration": "KGB006",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "april",
-         "type": "stor",
-         "model": "Volvo XC90"
-      },
-      {
-         "registration": "KGB007",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "maj",
-         "type": "stor",
-         "model": "Volvo XC90"
-      },
-      {
-         "registration": "KGB008",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "maj",
-         "type": "stor",
-         "model": "Volvo XC90"
-      },
-      {
-         "registration": "KGB009",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "juni",
-         "type": "skåpbil",
-         "model": "Partner Skåp 1.6 BlueHDi"
-      },
-      {
-         "registration": "KGB010",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "juni",
-         "type": "skåpbil",
-         "model": "Partner Skåp 1.6 BlueHDi"
-      },
-      {
-         "registration": "KGB011",
-         "gearbox": "automat",
-         "fuel": "bensin",
-         "inspected": true,
-         "service": "juli",
-         "type": "skåpbil",
-         "model": "Partner Skåp 1.6 BlueHDi"
-      },
-      {
-         "registration": "KGB012",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "juli",
-         "type": "skåpbil",
-         "model": "Partner Skåp 1.6 BlueHDi"
-      },
-      {
-         "registration": "CIA001",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "augusti",
-         "type": "skåpbil",
-         "model": "Partner Skåp 1.6 BlueHDi"
-      },
-      {
-         "registration": "CIA002",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "augusti",
-         "type": "liten",
-         "model": "Audi A3"
-      },
-      {
-         "registration": "CIA003",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "september",
-         "type": "liten",
-         "model": "Audi A3"
-      },
-      {
-         "registration": "CIA004",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "september",
-         "type": "liten",
-         "model": "Audi A3"
-      },
-      {
-         "registration": "CIA005",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "oktober",
-         "type": "liten",
-         "model": "Audi A3"
-      },
-      {
-         "registration": "CIA006",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "oktober",
-         "type": "liten",
-         "model": "Audi A3"
-      },
-      {
-         "registration": "CIA007",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "november",
-         "type": "liten",
-         "model": "Audi A3"
-      },
-      {
-         "registration": "CIA008",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "november",
-         "type": "liten",
-         "model": "Audi A3"
-      },
-      {
-         "registration": "CIA009",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "december",
-         "type": "liten",
-         "model": "Audi A3"
-      },
-      {
-         "registration": "CIA010",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "december",
-         "type": "liten",
-         "model": "Audi A3"
-      },
-      {
-         "registration": "CIA011",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "januari",
-         "type": "liten",
-         "model": "Audi A3"
-      },
-      {
-         "registration": "CIA012",
-         "gearbox": "manuell",
-         "fuel": "diesel",
-         "inspected": true,
-         "service": "december",
-         "type": "mellan",
-         "model": "Volvo V60"
-      }
-]}
+{
+    "cars": [
+        {
+            "registration": "MLB823",
+            "gearbox": "automat",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "januari",
+            "type": "mellan",
+            "model": "Volvo V60"
+        },
+        {
+            "registration": "MLB536",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "april",
+            "type": "stor",
+            "model": "Honda CR-V"
+        },
+        {
+            "registration": "MLB876",
+            "gearbox": "automat",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "mars",
+            "type": "skåpbil",
+            "model": "Partner Skåp 1,6 BlueHDI"
+        },
+        {
+            "registration": "MLB543",
+            "gearbox": "manuell",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "januari",
+            "type": "liten",
+            "model": "Opel ADAM"
+        },
+        {
+            "registration": "MLB676",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "april",
+            "type": "stor",
+            "model": "Kia Carnival"
+        },
+        {
+            "registration": "MLB954",
+            "gearbox": "manuell",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "januari",
+            "type": "mellan",
+            "model": "Ford Focus"
+        },
+        {
+            "registration": "MLB703",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "mars",
+            "type": "tjänstebil",
+            "model": "Volvo XC70"
+        },
+        {
+            "registration": "MLB559",
+            "gearbox": "manuell",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "april",
+            "type": "servicebil",
+            "model": "Ford Ranger"
+        },
+        {
+            "registration": "MLB340",
+            "gearbox": "automat",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "mars",
+            "type": "liten",
+            "model": "Opel Karl"
+        },
+        {
+            "registration": "MLB640",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "januari",
+            "type": "Skåpbil",
+            "model": "Opel Movano Combi"
+        },
+        {
+            "registration": "MLB421",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "april",
+            "type": "mellan",
+            "model": "Volvo S60"
+        },
+        {
+            "registration": "MLB027",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "mars",
+            "type": "tjänstebil",
+            "model": "Ford Galaxy"
+        },
+        {
+            "registration": "MLB643",
+            "gearbox": "automat",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "januari",
+            "type": "skåpbil",
+            "model": "Opel Vivaro"
+        },
+        {
+            "registration": "MLB003",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "april",
+            "type": "mellan",
+            "model": "Volvo S90"
+        },
+        {
+            "registration": "KLM345",
+            "gearbox": "automat",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "maj",
+            "type": "liten",
+            "model": "Mitsubishi Space Star"
+        },
+        {
+            "registration": "KLM123",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "juni",
+            "type": "mellan",
+            "model": "Dacia Sandero"
+        },
+        {
+            "registration": "HBA289",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "juli",
+            "type": "stor",
+            "model": "Dacia Duster"
+        },
+        {
+            "registration": "HBA101",
+            "gearbox": "manuell",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "augusti",
+            "type": "servicebil",
+            "model": "Nissan Note"
+        },
+        {
+            "registration": "KSE267",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "september",
+            "type": "skåpbil",
+            "model": "Opel Combo"
+        },
+        {
+            "registration": "PHJ456",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "oktober",
+            "type": "tjänstebil",
+            "model": "Skoda Fabia Combi"
+        },
+        {
+            "registration": "HJK890",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "november",
+            "type": "liten",
+            "model": "Ford Ka"
+        },
+        {
+            "registration": "GHJ678",
+            "gearbox": "manuell",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "december",
+            "type": "mellan",
+            "model": "Seat Toledo"
+        },
+        {
+            "registration": "BKL345",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "januari",
+            "type": "stor",
+            "model": "Skoda Fabia Combi"
+        },
+        {
+            "registration": "MNB098",
+            "gearbox": "manuell",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "februari",
+            "type": "servicebil",
+            "model": "Mitsubishi L200"
+        },
+        {
+            "registration": "DFG678",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "mars",
+            "type": "skåpbil",
+            "model": "Opel Combo"
+        },
+        {
+            "registration": "CVB234",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "april",
+            "type": "liten",
+            "model": "Nissan Micra"
+        },
+        {
+            "registration": "BNM123",
+            "gearbox": "automat",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "maj",
+            "type": "mellan",
+            "model": "Kia Optima"
+        },
+        {
+            "registration": "JKL579",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "juni",
+            "type": "stor",
+            "model": "Opel Mokka"
+        },
+        {
+            "registration": "IOP123",
+            "gearbox": "automat",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "juli",
+            "type": "servicebil",
+            "model": "Nissan Navara"
+        },
+        {
+            "registration": "HJK098",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "augusti",
+            "type": "skåpbil",
+            "model": "Opel Movano"
+        },
+        {
+            "registration": "GHJ543",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "september",
+            "type": "tjänstebil",
+            "model": "Volvo S60"
+        },
+        {
+            "registration": "TYU789",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "oktober",
+            "type": "liten",
+            "model": "Kia Picanto"
+        },
+        {
+            "registration": "ASD462",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "november",
+            "type": "mellan",
+            "model": "Volvo S90"
+        },
+        {
+            "registration": "FGH518",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "december",
+            "type": "stor",
+            "model": "Ford Focus"
+        },
+        {
+            "registration": "PÅK160",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "januari",
+            "type": "servicebil",
+            "model": "Volkswagen Amarok"
+        },
+        {
+            "registration": "DFG652",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "februari",
+            "type": "skåpbil",
+            "model": "Opel Combo skåp"
+        },
+        {
+            "registration": "KLO531",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "mars",
+            "type": "tjänstebil",
+            "model": "Audi A3"
+        },
+        {
+            "registration": "JHY610",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "april",
+            "type": "liten",
+            "model": "Fiat Panda"
+        },
+        {
+            "registration": "UIL953",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "maj",
+            "type": "mellan",
+            "model": "Renault Clio"
+        },
+        {
+            "registration": "GBT564",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "juni",
+            "type": "stor",
+            "model": "Lada Niva"
+        },
+        {
+            "registration": "KGB001",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "februari",
+            "type": "mellan",
+            "model": "Volvo V60"
+        },
+        {
+            "registration": "KGB002",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "februari",
+            "type": "mellan",
+            "model": "Volvo V60"
+        },
+        {
+            "registration": "KGB003",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "mars",
+            "type": "mellan",
+            "model": "Volvo V60"
+        },
+        {
+            "registration": "KGB004",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "mars",
+            "type": "stor",
+            "model": "Volvo XC90"
+        },
+        {
+            "registration": "KGB005",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "april",
+            "type": "stor",
+            "model": "Volvo XC90"
+        },
+        {
+            "registration": "KGB006",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "april",
+            "type": "stor",
+            "model": "Volvo XC90"
+        },
+        {
+            "registration": "KGB007",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "maj",
+            "type": "stor",
+            "model": "Volvo XC90"
+        },
+        {
+            "registration": "KGB008",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "maj",
+            "type": "stor",
+            "model": "Volvo XC90"
+        },
+        {
+            "registration": "KGB009",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "juni",
+            "type": "skåpbil",
+            "model": "Partner Skåp 1.6 BlueHDi"
+        },
+        {
+            "registration": "KGB010",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "juni",
+            "type": "skåpbil",
+            "model": "Partner Skåp 1.6 BlueHDi"
+        },
+        {
+            "registration": "KGB011",
+            "gearbox": "automat",
+            "fuel": "bensin",
+            "inspected": true,
+            "service": "juli",
+            "type": "skåpbil",
+            "model": "Partner Skåp 1.6 BlueHDi"
+        },
+        {
+            "registration": "KGB012",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "juli",
+            "type": "skåpbil",
+            "model": "Partner Skåp 1.6 BlueHDi"
+        },
+        {
+            "registration": "CIA001",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "augusti",
+            "type": "skåpbil",
+            "model": "Partner Skåp 1.6 BlueHDi"
+        },
+        {
+            "registration": "CIA002",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "augusti",
+            "type": "liten",
+            "model": "Audi A3"
+        },
+        {
+            "registration": "CIA003",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "september",
+            "type": "liten",
+            "model": "Audi A3"
+        },
+        {
+            "registration": "CIA004",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "september",
+            "type": "liten",
+            "model": "Audi A3"
+        },
+        {
+            "registration": "CIA005",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "oktober",
+            "type": "liten",
+            "model": "Audi A3"
+        },
+        {
+            "registration": "CIA006",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "oktober",
+            "type": "liten",
+            "model": "Audi A3"
+        },
+        {
+            "registration": "CIA007",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "november",
+            "type": "liten",
+            "model": "Audi A3"
+        },
+        {
+            "registration": "CIA008",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "november",
+            "type": "liten",
+            "model": "Audi A3"
+        },
+        {
+            "registration": "CIA009",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "december",
+            "type": "liten",
+            "model": "Audi A3"
+        },
+        {
+            "registration": "CIA010",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "december",
+            "type": "liten",
+            "model": "Audi A3"
+        },
+        {
+            "registration": "CIA011",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "januari",
+            "type": "liten",
+            "model": "Audi A3"
+        },
+        {
+            "registration": "CIA012",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "inspected": true,
+            "service": "december",
+            "type": "mellan",
+            "model": "Volvo V60"
+        }
+    ]
+}
