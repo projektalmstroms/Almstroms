@@ -1,58 +1,74 @@
 extends layout
 block content
+
+	h1 Godkänna ny användare
+	if authorizedUser.length>0
+		form(action="/authorized", method="POST")
+			table(border='1')
+				thead
+					tr
+						th Namn
+						th Anställningsnummer
+						th Godkänd
+
+				each user in authorizedUser
+					tr
+						td= user.name
+						td= user['id-number']
+						td 
+							input(type="checkbox" name="authorized" id="ok" value="user['id-number']")
+			input(type="submit" class="btn btn-primary btn-block" value="Godkänna")
+	else
+			p Det finns inga nya användare att godkänna
+
 	h1 Lägg till ny bil
-	form(action="/newcar", method="post")
+	form(action="/newcar", method="POST")
 		div
 		lable(for="reg") Reg.nr:
 			input(type="text", id="reg" name="registration")  
-		br     
-		div
-			lable(for="gearbox") Växellåda:
-				select(type="text", id="gearbox", name="gearbox") 
-					option Automat
-					option Manuell
-		br
-		div
-			lable(for="fuel") Drivmedel:
-				select(type="text", id="fuel", name="fuel")
-					option Bensin
-					option Diesel
-		br 
-		div
-			lable(for="service") Besiktigad:
-				select(type="text", id="service", name="service") 
-					option Januari
-					option Februari
-					option Mars
-					option April
-					option Maj
-					option Juni
-					option Juli
-					option Augusti
-					option September
-					option Oktober
-					option November
-					option December
-		br
-		div
-			lable(for="type") Fordonstyp: 
-				select(type="text",id="type", name="type") 
-					option Liten
-					option Mellan
-					option Stor
-					option Servicebil
-					option Skåpbil
-					option Tjänstebil
-		br
-		div
-			lable(for="model") Modell: 
-				input(type="text",id="model", name="model")
-		br 
-		button(type="submit") Lägg till
-	if posted
-		if checkedCar
-			h4 Det finns redan en bil med det registreringsnumret
-		else
-			h4 Följande bil är tillagd i registret: #{newCar.registration}, #{newCar.model}
-
+	br     
+	div
+		lable(for="gearbox") Växellåda:
+			select(type="text", id="gearbox", name="gearbox") 
+				option Automat
+				option Manuell
+	br
+	div
+		lable(for="fuel") Drivmedel:
+			select(type="text", id="fuel", name="fuel")
+				option Bensin
+				option Diesel
+	br 
+	div
+		lable(for="service") Besiktigad:
+			select(type="text", id="service", name="service") 
+				option Januari
+				option Februari
+				option Mars
+				option April
+				option Maj
+				option Juni
+				option Juli
+				option Augusti
+				option September
+				option Oktober
+				option November
+				option December
+	br
+	div
+		lable(for="type") Fordonstyp: 
+			select(type="text",id="type", name="type") 
+				option Liten
+				option Mellan
+				option Stor
+				option Servicebil
+				option Skåpbil
+				option Tjänstebil
+	br
+	div
+		lable(for="model") Modell: 
+			input(type="text",id="model", name="model")
+	br 
+	div.button
+			button(type="submit") Lägg till
 
