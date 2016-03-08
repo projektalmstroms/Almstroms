@@ -23,7 +23,7 @@ router.use('/', function (req, res, next){
 // check registration number
 router.post('/', function (req, res, next) {
 	req.post = true
-	req.check = false 
+	req.check = false
 	console.log(req.body)
   readFile.readJson(cars, carReg);
 
@@ -37,7 +37,7 @@ router.post('/', function (req, res, next) {
   }
   else {
   	var arr = data.cars
-  	var newCar = req.body 
+  	var newCar = req.body
   	arr.push(newCar);
   	  fs.writeFile(cars, JSON.stringify(data,null,4),function(error){
          if(error){

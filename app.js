@@ -56,7 +56,6 @@ app.post('/login', function (req, res) {
    }
 });
 
-
 app.post('/logout',function(req,res){
    app.locals.appUser = "";
    res.writeHead(302,{'Location':'/'});
