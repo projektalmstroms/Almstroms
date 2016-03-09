@@ -334,7 +334,15 @@
             "email": "hannaa78@alm.se",
             "role": "utvecklare",
             "password": "fjkhk",
-            "authorized": false
+            "authorized": true
+        },
+        {
+            "name": "Tomas",
+            "id-number": "4444e",
+            "email": "tom@alm.se",
+            "role": "utvecklare",
+            "password": "hej",
+            "authorized": true
         }
     ]
 }

@@ -16,7 +16,7 @@ block content
 						td= user.name
 						td= user['id-number']
 						td 
-							input(type="checkbox" name="userOk" id="ok" value="user['id-number']")
+							input(type="checkbox" name="userOk" id="ok" value=user['id-number'])
 			input(type="submit" class="btn btn-primary btn-block" value="Godkänna")
 	else
 			p Det finns inga nya användare att godkänna

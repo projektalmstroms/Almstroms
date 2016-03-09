@@ -10,16 +10,13 @@ router.use('/', function (req, res, next){
   readFile.readJson(user, autUser);
   function autUser(data){
     req.autUser = data.users.filter(function(x){
-      console.log(x.authorized);
       return !x.authorized;
-      
-
     })
       console.log(req.autUser);
       next()
   }
 });
-  
+
 // check registration number
 router.post('/', function (req, res, next) {
 	req.post = true
