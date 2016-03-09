@@ -13,6 +13,7 @@ var confirmation = require('./routes/confirmation');
 var newuser = require('./routes/newuser');
 var adduser = require('./routes/adduser');
 var newCar = require('./routes/newcar');
+var authorized = require('./routes/authorized');
 
 var app = express();
 app.locals.appUser = "";
@@ -35,6 +36,7 @@ app.use('/confirmation', confirmation);
 app.use('/newuser', newuser);
 app.use('/adduser', adduser);
 app.use('/newcar', newCar);
+app.use('/authorized', authorized);
 
 app.post('/login', function (req, res) {
    readFile.readJson(userData, loginUser);
@@ -53,7 +55,6 @@ app.post('/login', function (req, res) {
       console.log(app.locals.appUser);
    }
 });
-
 
 app.post('/logout',function(req,res){
    app.locals.appUser = "";

@@ -24,15 +24,15 @@ block content
          br
          p Bränsle:
          label Bensin
-            input(type="checkbox" name="bransletyp" value="bensin") 
+            input(type="radio" name="bransletyp" value="bensin") 
          label Diesel
-            input(type="checkbox" name="bransletyp" value="diesel") 
+            input(type="radio" name="bransletyp" value="diesel") 
          br
          p Växellåda:
          label Manuell
-            input(type="checkbox" name="vaxellada" value="manuell") 
+            input(type="radio" name="vaxellada" value="manuell") 
          label Automat
-            input(type="checkbox" name="vaxellada" value="automat") 
+            input(type="radio" name="vaxellada" value="automat") 
          br
          input(type="submit" class="btn btn-primary btn-block" value="Sök bil")
       if allDays && allDays.length > 0

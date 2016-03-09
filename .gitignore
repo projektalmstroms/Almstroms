@@ -1,6 +1,5 @@
 node_modules
 bookings.json
-car.json
+cars.json
 user.json
 userBookings.json
-

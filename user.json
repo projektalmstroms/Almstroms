@@ -327,7 +327,14 @@
             "role": "Sekreterare",
             "password": "svall",
             "authorized": true
+        },
+        {
+            "name": "Hanna Andersson",
+            "id-number": "UYT234",
+            "email": "hannaa78@alm.se",
+            "role": "utvecklare",
+            "password": "fjkhk",
+            "authorized": false
         }
-        
     ]
 }
