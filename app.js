@@ -14,6 +14,7 @@ var newuser = require('./routes/newuser');
 var adduser = require('./routes/adduser');
 var newCar = require('./routes/newcar');
 var authorized = require('./routes/authorized');
+var myPage = require('./routes/myPage');
 
 var app = express();
 app.locals.appUser = "";
@@ -37,6 +38,7 @@ app.use('/newuser', newuser);
 app.use('/adduser', adduser);
 app.use('/newcar', newCar);
 app.use('/authorized', authorized);
+app.use('/myPage',myPage);
 
 app.post('/login', function (req, res) {
    readFile.readJson(userData, loginUser);
