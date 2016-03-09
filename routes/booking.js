@@ -96,19 +96,6 @@ router.get('/', function(req, res, next) {
 		}
 });
 
-/*router.get('/', function(req, res, next){
-		var privatlan = req.query.privatlan;
-		if(privatlan) {
-			req.list = req.list(function(x){
-				return privatlan == x.privatlan;
-			});
-			next();
-		}
-		else {
-			console.log("no privatlan");
-			next();
-		}
-}); */
 
 router.get('/', function(req, res, next) {
 	res.render('booking', {
