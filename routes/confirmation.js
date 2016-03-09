@@ -52,6 +52,13 @@ router.post('/',function(req,res,next){
 router.post('/',function(req,res,next){
    readFile.readJson(userBookings,writeUserBookings);
    function writeUserBookings(data){
+      var privatlan = req.body.privatlan;
+      if (privatlan == 'lan'){
+         req.lan = true;
+      }
+      else{
+         req.lan = false;
+      }
       var userBookingsList = data.bookings;
       var existing = false;
       var newUserBooking = {
@@ -59,7 +66,10 @@ router.post('/',function(req,res,next){
          model: req.carModel,
          start: req.startDate,
          end: req.endDate,
+         privat : req.lan
+
       };
+      
       for(var i in userBookingsList){
          if(userBookingsList[i].userID == req.user['id-number']){
             existing = true;
@@ -75,6 +85,7 @@ router.post('/',function(req,res,next){
                   model: req.carModel,
                   start: req.startDate,
                   end: req.endDate,
+                  privat : req.lan
                }
             ]
          };
@@ -88,6 +99,8 @@ router.post('/',function(req,res,next){
       next();
    }
 });
+
+
 
 router.post('/', function(req, res, next) {
   res.render('confirmation', {
