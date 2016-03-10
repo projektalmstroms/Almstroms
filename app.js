@@ -14,9 +14,11 @@ var newuser = require('./routes/newuser');
 var adduser = require('./routes/adduser');
 var admin = require('./routes/admin');
 var myPage = require('./routes/myPage');
+var middle = require('./routes/middle');
 
 var app = express();
 app.locals.appUser = "";
+app.locals.admin = "";
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -29,27 +31,23 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
-app.use('/booking', booking);
-app.use('/list', list);
-app.use('/confirmation', confirmation);
-app.use('/newuser', newuser);
-app.use('/adduser', adduser);
-app.use('/admin', admin);
-app.use('/myPage',myPage);
+app.use('/middle', middle);
 
 app.post('/login', function (req, res) {
    readFile.readJson(userData, loginUser);
    function loginUser(data){
       app.locals.appUser = data.users.filter(function(user){
-         return user.email == req.body.username && req.body.password == user.password;
+         return user.email == req.body.username && req.body.password == user.password && user.authorized === true;
+      });
+      app.locals.admin = data.users.filter(function(user){
+         return user.email == req.body.username && req.body.password == user.password && user.authorized === true && user.role == 'ITadmin';
       });
       if (app.locals.appUser.length == 1) {
          res.writeHead(302,{'Location':'/booking'});
          res.end();
       }
       else {
-         // res.render(__dirname + '/views/fellogin');
+         res.render('index',{wrong:true});
          console.log('wrong password');
       }
       console.log(app.locals.appUser);
@@ -58,19 +56,40 @@ app.post('/login', function (req, res) {
 
 app.post('/logout',function(req,res){
    app.locals.appUser = "";
+   app.locals.admin = "";
    res.writeHead(302,{'Location':'/'});
    res.end();
 });
 
-app.get('/*',function(req,res,next){
+app.all('/*',function(req,res,next){
    if(app.locals.appUser.length == 1){
       next();
    }
    else{
-      res.writeHead(302,{'Location':'/'});
+      res.writeHead(302,{'Location':'/middle'});
       res.end();
    }
 });
+
+app.use('/users', users);
+app.use('/booking', booking);
+app.use('/list', list);
+app.use('/confirmation', confirmation);
+app.use('/newuser', newuser);
+app.use('/adduser', adduser);
+app.use('/myPage',myPage);
+
+app.all('/*',function(req,res,next){
+   if(app.locals.admin.length == 1){
+      next();
+   }
+   else{
+      res.writeHead(302,{'Location':'/middle'});
+      res.end();
+   }
+});
+
+app.use('/admin', admin);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

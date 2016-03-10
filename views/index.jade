@@ -15,4 +15,8 @@ block content
                input(type="password" name="password" id ="pass" placeholder="Lösenord" required)
             div
                button(type="submit") Logga in 
-         a(href="/newuser" name="newuser") Ny användare
+         a(href="/newuser") Ny användare
+         br
+      if wrong
+         br
+         p Ditt användarnamn eller lösenord är felaktigt. Du måste även ha blivit godkänd av administratör innan du kan logga in.

@@ -11,8 +11,12 @@ html
                   a(href="/") Logga in
                li
                   a(href="/booking") Boka bil
-                  if appUser.length == 1
-                     li(id="logger") Du är inloggad som #{appUser[0].name}
-                        a(href="/myPage") Min sida
+               li
+                  a(href="/myPage") Min sida
+               if admin.length == 1
+                  li
+                     a(href="admin") Administrera
+               if appUser.length == 1
+                  li(id="logger") Du är inloggad som #{appUser[0].name}
       
          block content
