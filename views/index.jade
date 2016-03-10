@@ -1,18 +1,18 @@
 extends layout
 
 block content
-   div.container
+   div.container.loggain
       if appUser.length == 1
          h1 Logga ut
          form(action="/logout" method='post' id='logout')
             button(type='submit') Logga ut
       else
-         h1 Almströms Bilpool
+         h1(class='almstroms') Almströms Bilpool
          form(action="/login" method="post" id='loginform')
             div
                input(type="username" name="username" id="uname" placeholder="Användarnamn" required)
             div
-               input(type="password" name="password" id ="pword" placeholder="Lösenord" required)
+               input(type="password" name="password" id ="pass" placeholder="Lösenord" required)
             div
                button(type="submit") Logga in 
-         a(href="/newuser") Ny användare
+         a(href="/newuser" name="newuser") Ny användare
