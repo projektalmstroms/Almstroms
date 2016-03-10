@@ -49,7 +49,7 @@ app.post('/login', function (req, res) {
          res.end();
       }
       else {
-         // res.render(__dirname + '/views/fellogin');
+         res.render('/',{wrong:true});
          console.log('wrong password');
       }
       console.log(app.locals.appUser);
