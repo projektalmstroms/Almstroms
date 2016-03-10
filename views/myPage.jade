@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	h1 Mina bokningar
+	if current.length > 0
+		table(border='1')
+			thead
+				tr
+					th Reg.nr
+					th Modell
+					th Starttid
+					th Sluttid
+
+			each booking in current[0].orders
+				tr
+					td= booking.car
+					td= booking.model
+					td= booking.start
+					td= booking.end
+	else
+		p Du har inga bokningar.

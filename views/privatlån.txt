@@ -1,0 +1,8 @@
+privatlån
+admin sida - sökfunktion för att kunna deleta
+min sida - se tidigare bokningar, profilsida (personalinfo)
+avbokning? - 
+göra bil obokningsbar i lista.
+
+
+	
