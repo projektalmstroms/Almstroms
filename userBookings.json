@@ -44,6 +44,32 @@
                     "model": "Audi A3",
                     "start": "2016-03-16",
                     "end": "2016-03-22"
+                },
+                {
+                    "car": "CIA003",
+                    "model": "Audi A3",
+                    "start": "2016-03-09",
+                    "end": "2016-03-12"
+                },
+                {
+                    "car": "CIA003",
+                    "model": "Audi A3",
+                    "start": "2016-03-09",
+                    "end": "2016-03-12"
+                },
+                {
+                    "car": "CIA009",
+                    "model": "Audi A3",
+                    "start": "2016-03-09",
+                    "end": "2016-03-10",
+                    "privat": true
+                },
+                {
+                    "car": "CIA006",
+                    "model": "Audi A3",
+                    "start": "2016-03-09",
+                    "end": "2016-03-12",
+                    "privat": false
                 }
             ]
         },

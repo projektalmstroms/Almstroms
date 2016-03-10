@@ -27,7 +27,7 @@ router.get('/', function(req, res, next) {
       next();
    }
    function checkDates(data){
-		if(req.allDays.length>7){
+		if(req.allDays.length>7){ 
 			req.tooManyDays = true;
 		}
       var mapped = data.bookings.filter(function(x){
@@ -95,6 +95,7 @@ router.get('/', function(req, res, next) {
 			next();
 		}
 });
+
 
 router.get('/', function(req, res, next) {
 	res.render('booking', {
