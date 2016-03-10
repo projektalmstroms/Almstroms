@@ -1,6 +1,0 @@
-extends layout
-
-block content
-	h1 Samtliga anställda nedan är kontrollerade
-	each user in approved
-		p #{user.name}, #{user['id-number']} är godkänd.

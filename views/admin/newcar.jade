@@ -1,0 +1,54 @@
+h1 Lägg till ny bil
+form(action="/admin", method="POST")
+   div
+   lable(for="reg") Reg.nr:
+      input(type="text", id="reg" name="registration")  
+   br     
+   div
+      lable(for="gearbox") Växellåda:
+         select(type="text", id="gearbox", name="gearbox") 
+            option automat
+            option manuell
+   br
+   div
+      lable(for="fuel") Drivmedel:
+         select(type="text", id="fuel", name="fuel")
+            option bensin
+            option diesel
+   br 
+   div
+      lable(for="service") Besiktigad:
+         select(type="text", id="service", name="service") 
+            option januari
+            option februari
+            option mars
+            option april
+            option maj
+            option juni
+            option juli
+            option augusti
+            option september
+            option oktober
+            option november
+            option december
+   br
+   div
+      lable(for="type") Fordonstyp: 
+         select(type="text",id="type", name="type") 
+            option liten
+            option mellan
+            option stor
+            option servicebil
+            option skåpbil
+            option tjänstebil
+   br
+   div
+      lable(for="model") Modell: 
+         input(type="text",id="model", name="model")
+   br 
+   button(type="submit") Lägg till
+if postedCar
+   if checkedCar
+      h4 Det finns redan en bil med det registreringsnumret
+   else
+      h4 Följande bil är tillagd i registret: #{newCar.registration}, #{newCar.model}

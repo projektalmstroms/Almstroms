@@ -1,0 +1,23 @@
+h1 Godkänna ny användare
+if authorizedUser.length>0
+   form(action="/admin", method="POST")
+      table(border='1')
+         thead
+            tr
+               th Namn
+               th Anställningsnummer
+               th Godkänd
+
+         each user in authorizedUser
+            tr
+               td= user.name
+               td= user['id-number']
+               td 
+                  input(type="radio" name="userOk" id="ok" value=user['id-number'])
+      input(type="submit" class="btn btn-primary btn-block" value="Godkänna")
+else
+   p Det finns inga nya användare att godkänna
+if approved
+   h3 Samtliga anställda nedan är kontrollerade
+   each user in approved
+      p #{user.name}, #{user['id-number']} är godkänd.

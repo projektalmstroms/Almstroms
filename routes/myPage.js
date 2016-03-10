@@ -22,11 +22,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/', function(req, res, next) {
-  res.render('myPage', { 
+  res.render('myPage', {
   	title: 'bookings',
   	current: req.list
   	});
-		
+
 });
 
 module.exports = router;
