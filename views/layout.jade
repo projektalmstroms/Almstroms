@@ -8,7 +8,10 @@ html
          nav 
             ul
                li
-                  a(href="/") Logga in
+                  if appUser.length == 1
+                     a(href="/") Logga ut
+                  else
+                     a(href="/") Logga in
                li
                   a(href="/booking") Boka bil
                li
@@ -17,6 +20,7 @@ html
                   li
                      a(href="admin") Administrera
                if appUser.length == 1
-                  li(id="logger") Du är inloggad som #{appUser[0].name}
+                  li(id="logger") 
+                     a(href="/myPage" id="loggedUser") Du är inloggad som #{appUser[0].name}
       
          block content

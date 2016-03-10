@@ -22,9 +22,12 @@ a {
    width: 700px;
    max-width: 95%;
    margin:0 auto;
-  
+
 }
 
+nav{
+   margin-bottom: 40px;
+}
 nav ul{
    padding: 0px;
 }
@@ -40,6 +43,11 @@ nav li{
 #logger{
    float:right;
 }
+
+#loggedUser{
+   color:black;
+}
+
 button, .registrera {
 
   cursor: pointer;
@@ -56,7 +64,7 @@ button:hover, .registrera:hover{
   background: #178ab4;
 }
 
-input[name="username"], #pass { 
+input[name="username"], #pass {
   outline: none;
   display: block;
   width: 100%;
@@ -78,7 +86,7 @@ input[name="username"], #pass {
   box-sizing: border-box;
   font-wieght: 400;
   -webkit-transition: 0.3s ease;
-  transition: 0.3s ease; 
+  transition: 0.3s ease;
 }
 input[name="username"]:focus, #pass:focus, #usertextbox:focus{
   border: 1px solid #33b5e5;
@@ -87,7 +95,7 @@ input[name="username"]:focus, #pass:focus, #usertextbox:focus{
 
 
 div.container {
- 
+
   background: #ffffff;
   max-width: 700px;
   width: 100%;
@@ -116,7 +124,7 @@ div.container {
 
 }
 div a {
-    margin: auto; 
+    margin: auto;
     top: 20px;
     position: relative;
 
@@ -124,13 +132,13 @@ div a {
 body .wrapper nav ul li a {
 
   position: relative;
-  margin: auto; 
+  margin: auto;
   top: 20px;
 
 }
 
 table{
-    border-collapse:collapse; 
+    border-collapse:collapse;
     border-spacing: 0;
     color: #333;
     width: 100%;
@@ -154,7 +162,7 @@ table{
 th{
   font-family: 'RobotoDraft', 'Roboto', sans-serif;
   padding: 10px;
-  border:1px outset white; 
+  border:1px outset white;
   color:#666;
   border:white 1px solid;
 
@@ -163,11 +171,13 @@ td{
   padding: 10px;
   border: solid 2px white;
 
-  
-  
+
+
 }
 
 tr:nth-child(even){
   background: #fafafa;
 
 }
+
+nav
