@@ -318,7 +318,7 @@
             "email": "par.lagerkvist@alm.se",
             "role": "Sekreterare",
             "password": "dvargen",
-            "authorized": true
+            "authorized": false
         },
         {
             "name": "Eyvind Johnson",
@@ -326,23 +326,7 @@
             "email": "eyvind.johnson@alm.se",
             "role": "Sekreterare",
             "password": "svall",
-            "authorized": true
-        },
-        {
-            "name": "Hanna Andersson",
-            "id-number": "UYT234",
-            "email": "hannaa78@alm.se",
-            "role": "utvecklare",
-            "password": "fjkhk",
-            "authorized": true
-        },
-        {
-            "name": "Tomas",
-            "id-number": "4444e",
-            "email": "tom@alm.se",
-            "role": "utvecklare",
-            "password": "hej",
-            "authorized": true
+            "authorized": false
         }
     ]
 }

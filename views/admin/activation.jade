@@ -1,0 +1,21 @@
+h1 Avaktivera/aktivera bil
+form(action:"/admin" method="post")
+   label(for="activation") Sök på registreringsnummer: 
+   input(type="text" name="activation")
+   input(type="submit" value="Sök bil")
+if postedAct
+   if activateCar
+      if !activateCar.inspected
+         p Vill du aktivera följande bil #{activateCar.registration}, #{activateCar.model}?
+      else
+         p Vill du avaktivera följande bil #{activateCar.registration}, #{activateCar.model}?
+      form(method="post" action="/admin")
+         label(for="radioAct1") Ja
+         input(type="radio" id="radioAct1" name="activationRadio" value="#{activateCar.registration}")
+         label(for="radioAct2") Nej
+         input(type="radio" id="radioAct2" name="activationRadio" value="Nej")
+         input(type="submit" value="Skicka")
+   else
+      p Det finns ingen bil med det registreringsnumret.
+if change
+   p Bilens status har uppdaterats.

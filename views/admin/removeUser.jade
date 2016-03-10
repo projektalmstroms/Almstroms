@@ -1,0 +1,18 @@
+h1 Ta bort användare
+form(action:"/admin" method="post")
+   label(for="delete") Sök på anställningsnummer: 
+   input(type="text" name="delete")
+   input(type="submit" value="Sök användare")
+if postedUser
+   if employee
+      p Vill du ta bort följande användare #{employee.name}, #{employee['id-number']}?
+      form(method="post" action="/admin")
+         label(for="radioUser1") Ja
+         input(type="radio" id="radioUser1" name="deleteRadio" value="#{employee['id-number']}")
+         label(for="radioUser2") Nej
+         input(type="radio" id="radioUser2" name="deleteRadio" value="Nej")
+         input(type="submit" value="Skicka")
+   else
+      p Det finns ingen användare med det anställningsnumret.
+if deleted
+   p Användaren har tagits bort
