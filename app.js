@@ -2,7 +2,6 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var routes = require('./routes/index');
-var users = require('./routes/users');
 var booking = require('./routes/booking');
 var carsData = __dirname + '/cars.json';
 var userData = __dirname + '/user.json';
@@ -31,6 +30,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/newuser', newuser);
 app.use('/middle', middle);
 
 app.post('/login', function (req, res) {
@@ -71,11 +71,9 @@ app.all('/*',function(req,res,next){
    }
 });
 
-app.use('/users', users);
 app.use('/booking', booking);
 app.use('/list', list);
 app.use('/confirmation', confirmation);
-app.use('/newuser', newuser);
 app.use('/adduser', adduser);
 app.use('/myPage',myPage);
 
