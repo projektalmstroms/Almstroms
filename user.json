@@ -300,7 +300,7 @@
             "name": "Bob Bark",
             "id-number": "AA0017",
             "email": "bob.bark@alm.se",
-            "role": "Säljare",
+            "role": "ITadmin",
             "password": "barkis",
             "authorized": true
         },
