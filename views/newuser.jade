@@ -1,16 +1,17 @@
 extends layout
 
 block content
-	h1 Registrera ny användare
-	form(action="/adduser" method="post" id='adduser')
-		input(type="text" name="name" id="uname" placeholder="Namn" required)
-		br
-		input(type="text" name="id-number" id="uname" placeholder="Anställningsnummer" required)
-		br
-		input(type="email" name="email" id="uname" placeholder="E-post" required)
-		br
-		input(type="text" name="role" id="uname" placeholder="Yrkesroll" required)
-		br
-		input(type="password" name="password" id="uname" placeholder="Lösenord" required)
-		br
-		input(type="submit" class="btn btn-primary btn-block" value="Registrera")
+	div.container.loggain
+		h1(class='almstroms') Registrera ny användare
+		form(action="/adduser" method="post" id='adduser')
+			input(type="text" name="name" id="usertextbox" placeholder="Namn" required)
+			br
+			input(type="text" name="id-number" id="usertextbox" placeholder="Anställningsnummer" required)
+			br
+			input(type="email" name="email" id="usertextbox" placeholder="E-post" required)
+			br
+			input(type="text" name="role" id="usertextbox" placeholder="Yrkesroll" required)
+			br
+			input(type="password" name="password" id="usertextbox" placeholder="Lösenord" required)
+			br
+			input(type="submit" class="registrera" value="Registrera")
