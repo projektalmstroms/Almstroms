@@ -12,8 +12,7 @@ var booking = require('./routes/booking');
 var confirmation = require('./routes/confirmation');
 var newuser = require('./routes/newuser');
 var adduser = require('./routes/adduser');
-var newCar = require('./routes/newcar');
-var authorized = require('./routes/authorized');
+var admin = require('./routes/admin');
 var myPage = require('./routes/myPage');
 
 var app = express();
@@ -36,8 +35,7 @@ app.use('/list', list);
 app.use('/confirmation', confirmation);
 app.use('/newuser', newuser);
 app.use('/adduser', adduser);
-app.use('/newcar', newCar);
-app.use('/authorized', authorized);
+app.use('/admin', admin);
 app.use('/myPage',myPage);
 
 app.post('/login', function (req, res) {

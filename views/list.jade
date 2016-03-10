@@ -10,8 +10,8 @@ else
 					th Reg.nr
 					th Växellåda
 					th Drivmedel
-					th Besiktigad
-					th Service
+					//- th Besiktigad
+					//- th Service
 					th Fordonstyp
 					th Boka
 				each item, index in carArray	
@@ -20,8 +20,8 @@ else
 						td= item.registration
 						td= item.gearbox
 						td= item.fuel
-						td= item.inspected
-						td= item.service
+						//- td= item.inspected
+						//- td= item.service
 						td= item.type
 						td
 							input(type="radio" name="book" value="#{item.registration},#{item.model},#{allDays}" required) 
