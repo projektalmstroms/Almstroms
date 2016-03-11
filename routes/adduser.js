@@ -4,9 +4,11 @@ var readFile = require('../readfiles.js');
 var user = __dirname + '/../user.json';
 var fs = require('fs');
 
-router.post('/',function(req,res,next){
+router.post('/',function(req,res,next){ 
+   // Först skriver man ut req.body som är hela sidan av adduser.
    console.log(req.body);
-   var newUser = req.body;
+   // Sen skriver en variabel newUser som är lika req.body 
+   var newUser = req.body; 
    readFile.readJson(user,listUser);
    function listUser(data){
       var arr = data.users;
