@@ -575,6 +575,15 @@
             "service": "december",
             "type": "mellan",
             "model": "Volvo V60"
+        },
+        {
+            "registration": "WWW999",
+            "gearbox": "manuell",
+            "fuel": "diesel",
+            "service": "januari",
+            "type": "stor",
+            "model": "kjghkjgkhgjhg",
+            "inspected": false
         }
     ]
 }
