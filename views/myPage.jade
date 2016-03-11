@@ -12,11 +12,11 @@ block content
 						th Starttid
 						th Sluttid
 
-				each booking in current[0].orders
-					tr
-						td= booking.car
-						td= booking.model
-						td= booking.start
-						td= booking.end
+					each booking in current[0].orders
+						tr
+							td= booking.car
+							td= booking.model
+							td= booking.start
+							td= booking.end
 		else
 			p Du har inga bokningar.

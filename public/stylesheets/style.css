@@ -60,7 +60,7 @@ button, .registrera {
   transition: 0.3s ease;
 }
 
-button:hover, .registrera:hover, #sok:hover, #boka:hover{
+button:hover, .registrera:hover, #sok:hover, #boka:hover, .loggaout:hover{
   background: #178ab4;
 }
 
@@ -103,6 +103,7 @@ div.container {
   border: solid 60px #ffffff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
+
 
 
 }
@@ -170,9 +171,6 @@ th{
 td{
   padding: 10px;
   border: solid 2px white;
-
-
-
 }
 
 tr:nth-child(even){
@@ -180,13 +178,20 @@ tr:nth-child(even){
 
 }
 
-.bil, .mypage{
+
+.bil, .mypage, .logout{
   font-weight: 700;
   color: #33b5e5;
   font-size: 23px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
-#sok, #boka{
+.logout{
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+
+}
+#sok, #boka, .loggaout, #godkanna, .laggtill{
   color: #ffffff;
   background: #33b5e5;
   border: 0;
@@ -198,9 +203,21 @@ tr:nth-child(even){
   font-weight: 700;
   font-size: 13px;
   -moz-box-shadow: 0 1px 2px #d1d1d1;
+  transition: 0.3s ease;  
 }
+.loggaout{
+  width: 50%;
+  display:block;
+  margin:0 auto;
+}
+.laggtill{
+   width: 22%;
+}
+
+
 .section{
   font-weight: 900;
+
 }
 .klar{
   color: #33b5e5;
