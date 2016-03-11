@@ -203,7 +203,7 @@ tr:nth-child(even){
   font-weight: 700;
   font-size: 13px;
   -moz-box-shadow: 0 1px 2px #d1d1d1;
-  transition: 0.3s ease;
+  transition: 0.3s ease;  
 }
 .loggaout{
   width: 50%;
