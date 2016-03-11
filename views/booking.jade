@@ -2,13 +2,13 @@ extends layout
 
 block content
    .container
-      h1 Välj bil
-      p Välj datum:
+      h1(class="bil") Välj bil
+      p(class="section") Välj datum:
       form(action="/booking" method="get" id='date')
-         input(type="date" name="startdate" id="start" required)
+         input(type="date" name="startdate" calss="date" id="start" required)
          input(type="date" name="enddate" id ="end" required)
          br
-         p Typ av bil:
+         p(class="section") Typ av bil:
          label Liten
             input(type="checkbox" name="fordonstyp" value="liten")  
          label Mellan
@@ -22,18 +22,18 @@ block content
          label Tjänstebil
             input(type="checkbox" name="fordonstyp" value="tjanstebil")  
          br
-         p Bränsle:
+         p(class="section") Bränsle:
          label Bensin
             input(type="radio" name="bransletyp" value="bensin") 
          label Diesel
             input(type="radio" name="bransletyp" value="diesel") 
          br
-         p Växellåda:
+         p(class="section") Växellåda:
          label Manuell
             input(type="radio" name="vaxellada" value="manuell") 
          label Automat
             input(type="radio" name="vaxellada" value="automat")   
          br
-         input(type="submit" class="btn btn-primary btn-block" value="Sök bil")
+         input(type="submit" id="sok" class="btn btn-primary btn-block" value="Sök bil")
       if allDays && allDays.length > 0
          include list.jade

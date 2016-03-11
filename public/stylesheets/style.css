@@ -60,11 +60,11 @@ button, .registrera {
   transition: 0.3s ease;
 }
 
-button:hover, .registrera:hover{
+button:hover, .registrera:hover, #sok:hover, #boka:hover{
   background: #178ab4;
 }
 
-input[name="username"], #pass {
+input[name="username"], #pass{
   outline: none;
   display: block;
   width: 100%;
@@ -154,8 +154,8 @@ table{
    -moz-border-radius:3px;
    -webkit-border-radius:3px;
    border-radius:3px;
-  -moz-box-shadow: 0 1px 2px #d1d1d1;
-  box-shadow: 0 1px 2px #d1d1d1;
+   -moz-box-shadow: 0 1px 2px #d1d1d1;
+   box-shadow: 0 1px 2px #d1d1d1;
 
 
 }
@@ -180,4 +180,31 @@ tr:nth-child(even){
 
 }
 
-nav
+.bil, .mypage{
+  font-weight: 700;
+  color: #33b5e5;
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+#sok, #boka{
+  color: #ffffff;
+  background: #33b5e5;
+  border: 0;
+  cursor: pointer;
+  padding: 10px 40px;
+  margin-top: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius:3px;
+  font-weight: 700;
+  font-size: 13px;
+  -moz-box-shadow: 0 1px 2px #d1d1d1;
+}
+.section{
+  font-weight: 900;
+}
+.klar{
+  color: #33b5e5;
+}
+
+  
+
