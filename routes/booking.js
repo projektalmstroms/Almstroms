@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 
 }
 });
-
+/* Funktionen söker tillgängligheten på bilar från en startdatum till ett slutdatum från bookings.json*/
 router.get('/', function(req, res, next) {
 	var fromDate = req.query.startdate;
    var toDate = req.query.enddate;
@@ -26,10 +26,12 @@ router.get('/', function(req, res, next) {
    else{
       next();
    }
+   /*Om urvalet är större än 7 dagar sätts req.tooManyDays in */
    function checkDates(data){
 		if(req.allDays.length>7){
 			req.tooManyDays = true;
 		}
+	/* Filtrerar och väljer ut alla datum mellan startdatum och slutdatum */
       var mapped = data.bookings.filter(function(x){
 			for(var i in req.allDays){
 				if(x.dates.indexOf(req.allDays[i]) >=0){
@@ -37,9 +39,11 @@ router.get('/', function(req, res, next) {
 				}
 			}
       })
+     /* Retunerar antalet bilar med matchat urval */
       .map(function(x){
          return x.car;
       });
+      /* Filtrerar bilar som är inspected samtidigt som de filtreras mot datum. */
       req.list = req.list.filter(function(x){
          return mapped.indexOf(x.registration) < 0  && x.inspected === true;
       });
@@ -47,6 +51,7 @@ router.get('/', function(req, res, next) {
    }
 });
 
+	/* Skapar urval för dem olika valen genom if/else sats. */
 router.get('/', function(req, res, next) {
 		var gearbox = req.query.vaxellada;
 		if(gearbox){

@@ -22,7 +22,6 @@ a {
    width: 700px;
    max-width: 95%;
    margin:0 auto;
-
 }
 
 nav{
@@ -37,7 +36,6 @@ nav li{
    display: inline-block;
    margin-right: 20px;
    font-size: 16px;
-
 }
 
 #logger{
@@ -60,7 +58,7 @@ button, .registrera {
   transition: 0.3s ease;
 }
 
-button:hover, .registrera:hover, #sok:hover, #boka:hover, .loggaout:hover{
+button:hover, .registrera:hover, #sok:hover, #boka:hover{
   background: #178ab4;
 }
 
@@ -93,7 +91,6 @@ input[name="username"]:focus, #pass:focus, #usertextbox:focus{
   color: #333333;
 }
 
-
 div.container {
 
   background: #ffffff;
@@ -103,8 +100,6 @@ div.container {
   border: solid 60px #ffffff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
-
-
 
 }
 .loggain{
@@ -121,7 +116,6 @@ div.container {
   font-size: 20px;
   font-weight: 400;
   line-height: 1;
-
 
 }
 div a {
@@ -158,7 +152,6 @@ table{
    -moz-box-shadow: 0 1px 2px #d1d1d1;
    box-shadow: 0 1px 2px #d1d1d1;
 
-
 }
 th{
   font-family: 'RobotoDraft', 'Roboto', sans-serif;
@@ -177,7 +170,6 @@ tr:nth-child(even){
   background: #fafafa;
 
 }
-
 
 .bil, .mypage, .logout{
   font-weight: 700;
@@ -214,7 +206,6 @@ tr:nth-child(even){
    width: 22%;
 }
 
-
 .section{
   font-weight: 900;
 
@@ -222,3 +213,30 @@ tr:nth-child(even){
 .klar{
   color: #33b5e5;
 }
+
+.bil, .mypage{
+  font-weight: 700;
+  color: #33b5e5;
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+#sok, #boka{
+  color: #ffffff;
+  background: #33b5e5;
+  border: 0;
+  cursor: pointer;
+  padding: 10px 40px;
+  margin-top: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius:3px;
+  font-weight: 700;
+  font-size: 13px;
+  -moz-box-shadow: 0 1px 2px #d1d1d1;
+}
+.section{
+  font-weight: 900;
+}
+.klar{
+  color: #33b5e5;
+}
+
