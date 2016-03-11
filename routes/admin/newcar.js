@@ -3,7 +3,9 @@ var cars = __dirname + '/../../cars.json';
 var readFile = require('../../readfiles.js');
 var user = __dirname + '/../../user.json';
 
-/* */
+/* Läser av Json filen "cars" för att kunna lägga till en ny bil i filen. Genom filter funktion sorteras reg.nr 
+som övverensstämmer med req.body ut och retunerar om man efter kontrollerat reg nr existerar, annars skapas 
+det en newCar som pushar upp in i Json filen. */
 function newcarFunc(req,cb){
    readFile.readJson(cars, carReg);
    function carReg(data){
