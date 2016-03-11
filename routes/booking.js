@@ -27,7 +27,7 @@ router.get('/', function(req, res, next) {
       next();
    }
    function checkDates(data){
-		if(req.allDays.length>7){ 
+		if(req.allDays.length>7){
 			req.tooManyDays = true;
 		}
       var mapped = data.bookings.filter(function(x){
@@ -41,12 +41,11 @@ router.get('/', function(req, res, next) {
          return x.car;
       });
       req.list = req.list.filter(function(x){
-         return mapped.indexOf(x.registration) < 0;
+         return mapped.indexOf(x.registration) < 0  && x.inspected === true;
       });
       next();
    }
 });
-
 
 router.get('/', function(req, res, next) {
 		var gearbox = req.query.vaxellada;
