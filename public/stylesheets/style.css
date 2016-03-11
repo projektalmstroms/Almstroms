@@ -93,6 +93,9 @@ input[name="username"]:focus, #pass:focus, #usertextbox:focus{
   color: #333333;
 }
 
+.loggaout{
+   width:20px;
+}
 
 div.container {
 
@@ -186,7 +189,8 @@ tr:nth-child(even){
   font-size: 23px;
   margin-bottom: 25px;
 }
-#sok, #boka{
+
+.loggaout, #sok, #boka{
   color: #ffffff;
   background: #33b5e5;
   border: 0;
@@ -205,6 +209,3 @@ tr:nth-child(even){
 .klar{
   color: #33b5e5;
 }
-
-  
-
