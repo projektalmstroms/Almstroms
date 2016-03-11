@@ -92,7 +92,6 @@ input[name="username"]:focus, #pass:focus, #usertextbox:focus{
   border: 1px solid #33b5e5;
   color: #333333;
 }
-
 div.container {
 
   background: #ffffff;
