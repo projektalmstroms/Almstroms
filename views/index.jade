@@ -3,9 +3,9 @@ extends layout
 block content
    div.container.loggain
       if appUser.length == 1
-         h1 Logga ut
+         h1(class="logout") Logga ut
          form(action="/logout" method='post' id='logout')
-            button(type='submit') Logga ut
+            button(type='submit' class="loggaout") Logga ut
       else
          h1(class='almstroms') Almströms Bilpool
          form(action="/login" method="post" id='loginform')
