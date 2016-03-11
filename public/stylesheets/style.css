@@ -93,10 +93,6 @@ input[name="username"]:focus, #pass:focus, #usertextbox:focus{
   color: #333333;
 }
 
-.loggaout{
-   width:20px;
-}
-
 div.container {
 
   background: #ffffff;
@@ -188,7 +184,6 @@ tr:nth-child(even){
   font-size: 23px;
   margin-bottom: 5px;
 }
-
 .logout{
   text-align: center;
   margin-bottom: 15px;
