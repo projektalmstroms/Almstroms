@@ -8,13 +8,13 @@ if authorizedUser.length>0
                th Anställningsnummer
                th Godkänd
 
-         each user in authorizedUser
-            tr
-               td= user.name
-               td= user['id-number']
-               td 
-                  input(type="radio" name="userOk" id="ok" value=user['id-number'])
-      input(type="submit" class="btn btn-primary btn-block" value="Godkänna")
+            each user in authorizedUser
+               tr
+                  td= user.name
+                  td= user['id-number']
+                  td 
+                     input(type="radio" name="userOk" id="ok" value=user['id-number'])
+      input(type="submit" class="btn btn-primary btn-block" id="godkanna" value="Godkänna")
 else
    p Det finns inga nya användare att godkänna
 if approved
