@@ -6,8 +6,9 @@ var readFile = require('../readfiles.js');
 var fs = require('fs');
 
 
-/* Read teh Jsonfile: userBookings and list the bookings for select user. From req.list we use the filter function. 
-Use app.locals.appUser för att koppla det till rätt valt id-nummer */
+/* Läser av  Jsonfilen: userBookings. Utifrån den listan skapas en function där vi listar alla user i req.list
+som ligger under bookings i jsonfilen. Utifrån den listan filtrerar vi ut och retunerar userID om det är lika med 
+rätt id-nummer. */
 router.get('/', function(req, res, next) {
 	readFile.readJson(userBookings, listBookings);
 	function listBookings(json){
@@ -21,7 +22,8 @@ router.get('/', function(req, res, next) {
 		next();
 	}
 });
-/* Rendrar current list av bookings på myPage.jade*/
+/* Rendrar current list av bookings på myPage.jade dvs den listan som överenstämmer med det urvalet som gjordes i 
+functionen */
 router.get('/', function(req, res, next) {
   res.render('myPage', {
   	title: 'bookings',
