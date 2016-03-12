@@ -217,6 +217,7 @@ tr:nth-child(even){
 
 .section{
   font-weight: 900;
+  display:block;
 
 }
 .klar{
