@@ -29,7 +29,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Setting up routes for various stages of login. Always allowed to run.
+// Setting up routes for various stages of login and new users sign up. Always allowed to run.
 app.use('/', routes);
 app.use('/newuser', newuser);
 app.use('/adduser', adduser);
