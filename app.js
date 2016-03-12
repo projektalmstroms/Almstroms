@@ -32,6 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Setting up routes for various stages of login. Always allowed to run.
 app.use('/', routes);
 app.use('/newuser', newuser);
+app.use('/adduser', adduser);
 app.use('/middle', middle);
 
 // Posting to login from index. Reads from file user.json.
@@ -83,7 +84,6 @@ app.all('/*',function(req,res,next){
 app.use('/booking', booking);
 app.use('/list', list);
 app.use('/confirmation', confirmation);
-app.use('/adduser', adduser);
 app.use('/myPage',myPage);
 
 // Checks for logged in admin. If admin is logged in: allows for routes below. Else redirects to /middle.
