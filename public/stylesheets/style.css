@@ -179,11 +179,11 @@ tr:nth-child(even){
 }
 
 
-.bil, .mypage, .logout{
+.bil, .mypage, .logout, .accept{
   font-weight: 700;
   color: #33b5e5;
   font-size: 23px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .logout{
   text-align: center;
