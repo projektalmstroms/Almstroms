@@ -1,8 +1,8 @@
-h1 Avaktivera/aktivera bil
+h1(class="accept") Avaktivera/aktivera bil
 form(action:"/admin" method="post")
    label(for="activation") Sök på registreringsnummer: 
-   input(type="text" name="activation")
-   input(type="submit" value="Sök bil")
+   input(type="text" id="activation" name="activation")
+   input(type="submit" id="car" value="Sök bil")
 if postedAct
    if activateCar
       if !activateCar.inspected
