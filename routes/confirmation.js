@@ -113,7 +113,7 @@ router.post('/',function(req,res,next){
 });
 
 
-// Render to /confirmation.
+// Render to /confirmation. Passes info for booking confirmation.
 router.post('/', function(req, res, next) {
   res.render('confirmation', {
      title: 'Express',
