@@ -60,7 +60,7 @@ button, .registrera {
   transition: 0.3s ease;
 }
 
-button:hover, .registrera:hover, #sok:hover, #boka:hover, .loggaout:hover{
+button:hover, .registrera:hover, #sok:hover, #boka:hover, .loggaout:hover, #godkanna:hover, #car:hover, #user:hover{
   background: #178ab4;
 }
 
@@ -88,7 +88,7 @@ input[name="username"], #pass{
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-input[name="username"]:focus, #pass:focus, #usertextbox:focus{
+input[name="username"]:focus, #pass:focus, #usertextbox:focus, #reg:focus{
   border: 1px solid #33b5e5;
   color: #333333;
 }
@@ -179,11 +179,11 @@ tr:nth-child(even){
 }
 
 
-.bil, .mypage, .logout{
+.bil, .mypage, .logout, .accept, .addcar, .must{
   font-weight: 700;
   color: #33b5e5;
   font-size: 23px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .logout{
   text-align: center;
@@ -217,8 +217,59 @@ tr:nth-child(even){
 
 .section{
   font-weight: 900;
+  display:block;
 
 }
 .klar{
   color: #33b5e5;
 }
+#reg{
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+  width: 100px;
+  margin-left: 5px;
+}
+#model{ 
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+  width: 100px;
+}
+
+#gearbox, #fuel, #service{
+  margin-left: 5px;
+  width: 85px;
+}
+#type{
+  width: 80px;
+  }
+.laggtill{
+    margin-top: -20px;
+  }
+#car, #user{
+  color: #ffffff;
+  background: #33b5e5;
+  border: 0;
+  cursor: pointer;
+  padding: 2px 7px;
+  margin-top: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius:3px;
+  font-weight: 700;
+  font-size: 13px;
+  -moz-box-shadow: 0 1px 2px #d1d1d1;
+  transition: 0.3s ease;  
+}
+#activation {
+  width: 100px;
+  transition: 0.3s ease;  
+}
+#delete{
+  width: 100px;
+  transition: 0.3s ease;  
+}
+label{
+  margin-right: 5px;
+}
+
+  
+
