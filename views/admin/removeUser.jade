@@ -1,8 +1,8 @@
-h1 Ta bort användare
+h1(class="accept") Ta bort användare
 form(action:"/admin" method="post")
    label(for="delete") Sök på anställningsnummer: 
-   input(type="text" name="delete")
-   input(type="submit" value="Sök användare")
+   input(type="text" id="delete" name="delete")
+   input(type="submit" id="user" value="Sök användare")
 if postedUser
    if employee
       p Vill du ta bort följande användare #{employee.name}, #{employee['id-number']}?
