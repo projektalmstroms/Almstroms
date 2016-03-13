@@ -3,6 +3,12 @@ var cars = __dirname + '/../../cars.json';
 var readFile = require('../../readfiles.js');
 var user = __dirname + '/../../user.json';
 
+// Function for creating new car.
+// Parameters: req equal to request object. cb is next()
+// Gets data from cars.json.
+// Checks if the added registration-number exists in list of cars. If it does calls next().
+// If registration does not exist, the new car is pushed in to array of cars with value of inspected being set to true.
+// Writes to file
 function newcarFunc(req,cb){
    readFile.readJson(cars, carReg);
    function carReg(data){
@@ -11,6 +17,7 @@ function newcarFunc(req,cb){
       });
       if (checkedReg.length == 1) {
          req.check = true;
+         cb()
       }
       else {
         var arr = data.cars;

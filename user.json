@@ -318,7 +318,7 @@
             "email": "par.lagerkvist@alm.se",
             "role": "Sekreterare",
             "password": "dvargen",
-            "authorized": false
+            "authorized": true
         },
         {
             "name": "Eyvind Johnson",
