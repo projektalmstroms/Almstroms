@@ -22,6 +22,7 @@ a {
    width: 700px;
    max-width: 95%;
    margin:0 auto;
+
 }
 
 nav{
@@ -36,6 +37,7 @@ nav li{
    display: inline-block;
    margin-right: 20px;
    font-size: 16px;
+
 }
 
 #logger{
@@ -58,7 +60,7 @@ button, .registrera {
   transition: 0.3s ease;
 }
 
-button:hover, .registrera:hover, #sok:hover, #boka:hover {
+button:hover, .registrera:hover, #sok:hover, #boka:hover, .loggaout:hover, #godkanna:hover, #car:hover, #user:hover{
   background: #178ab4;
 }
 
@@ -91,6 +93,7 @@ input[name="username"]:focus, #pass:focus, #usertextbox:focus, #reg:focus{
   color: #333333;
 }
 
+
 div.container {
 
   background: #ffffff;
@@ -100,6 +103,8 @@ div.container {
   border: solid 60px #ffffff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
+
+
 
 }
 .loggain{
@@ -116,6 +121,7 @@ div.container {
   font-size: 20px;
   font-weight: 400;
   line-height: 1;
+
 
 }
 div a {
@@ -152,6 +158,7 @@ table{
    -moz-box-shadow: 0 1px 2px #d1d1d1;
    box-shadow: 0 1px 2px #d1d1d1;
 
+
 }
 th{
   font-family: 'RobotoDraft', 'Roboto', sans-serif;
@@ -171,13 +178,13 @@ tr:nth-child(even){
 
 }
 
-.bil, .mypage, .logout {
+
+.bil, .mypage, .logout, .accept, .addcar, .must{
   font-weight: 700;
   color: #33b5e5;
   font-size: 23px;
   margin-bottom: 15px;
 }
-
 .logout{
   text-align: center;
   margin-bottom: 15px;
@@ -207,6 +214,7 @@ tr:nth-child(even){
    width: 22%;
 }
 
+
 .section{
   font-weight: 900;
   display:block;
@@ -215,7 +223,6 @@ tr:nth-child(even){
 .klar{
   color: #33b5e5;
 }
-
 #reg{
   margin-bottom: 15px;
   transition: 0.3s ease;
@@ -243,15 +250,15 @@ tr:nth-child(even){
   background: #33b5e5;
   border: 0;
   cursor: pointer;
-  padding: 10px 40px;
+  padding: 2px 7px;
   margin-top: 10px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   border-radius:3px;
   font-weight: 700;
   font-size: 13px;
   -moz-box-shadow: 0 1px 2px #d1d1d1;
+  transition: 0.3s ease;  
 }
-
 #activation {
   width: 100px;
   transition: 0.3s ease;  
@@ -271,4 +278,5 @@ img{
   width: 50%;
   margin-bottom: 20px;
 }
+  
 

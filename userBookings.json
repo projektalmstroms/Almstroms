@@ -58,20 +58,6 @@
                     "start": "2016-03-09",
                     "end": "2016-03-12",
                     "privat": false
-                },
-                {
-                    "car": "MLB876",
-                    "model": "Partner Skåp 1",
-                    "start": "6 BlueHDI",
-                    "end": "2016-03-10",
-                    "privat": false
-                },
-                {
-                    "car": "MLB876",
-                    "model": "Partner Skåp 1",
-                    "start": "6 BlueHDI",
-                    "end": "2016-03-10",
-                    "privat": true
                 }
             ]
         },
