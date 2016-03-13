@@ -15,6 +15,8 @@ var adduser = require('./routes/adduser');
 var admin = require('./routes/admin');
 var myPage = require('./routes/myPage');
 var middle = require('./routes/middle');
+var favicon = require('serve-favicon');
+
 
 var app = express();
 // Setting up empty local variables for login-functionality. One for user, one for admin
@@ -24,12 +26,12 @@ app.locals.admin = "";
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-
+app.use(favicon(path.join(__dirname, 'public', 'images/small-logo-.png')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Setting up routes for various stages of login. Always allowed to run.
+// Setting up routes for various stages of login and new users sign up. Always allowed to run.
 app.use('/', routes);
 app.use('/newuser', newuser);
 app.use('/adduser', adduser);
@@ -85,6 +87,7 @@ app.use('/booking', booking);
 app.use('/list', list);
 app.use('/confirmation', confirmation);
 app.use('/myPage',myPage);
+
 
 // Checks for logged in admin. If admin is logged in: allows for routes below. Else redirects to /middle.
 app.all('/*',function(req,res,next){
