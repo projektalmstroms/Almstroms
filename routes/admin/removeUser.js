@@ -3,6 +3,10 @@ var cars = __dirname + '/../../cars.json';
 var readFile = require('../../readfiles.js');
 var user = __dirname + '/../../user.json';
 
+// Function for removing users.
+// Parameters: req equal to request object. cb is next()
+// Gets data from user.json.
+// Gets selected user and saves it in to req.chooseUser. Only used for showing requested user in jade-file.
 function delete1(req, cb){
    req.postedUser = true;
    readFile.readJson(user, chooseUser);
@@ -15,6 +19,11 @@ function delete1(req, cb){
    }
 }
 
+// Function for removing users.
+// Parameters: req equal to request object. cb is next()
+// Gets data from user.json.
+// Gets chosen user from array of users. Deletes that user with splice method.
+// Writes to file
 function delete2(req,cb){
    readFile.readJson(user, deleteUsers);
    function deleteUsers(data){
