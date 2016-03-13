@@ -1,3 +1,4 @@
+// Sets modules and paths
 var express = require('express');
 var router = express.Router();
 var fs = require('fs');
@@ -9,6 +10,7 @@ var newcarModule = require('./admin/newcar.js');
 var approveModule = require('./admin/approveUser.js');
 var deleteModule = require('./admin/removeUser.js');
 
+// Sets false variables. Becomes true depending on which posts are made.
 router.all('/', function (req, res, next){
 	req.postCar = false;
    req.postAct = false;
