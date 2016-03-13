@@ -125,6 +125,20 @@
                     "start": "2016-04-13",
                     "end": "2016-04-14",
                     "privat": false
+                },
+                {
+                    "car": "IOP123",
+                    "model": "Nissan Navara",
+                    "start": "2016-03-19",
+                    "end": "2016-03-20",
+                    "privat": false
+                },
+                {
+                    "car": "IOP123",
+                    "model": "Nissan Navara",
+                    "start": "2016-03-26",
+                    "end": "2016-03-27",
+                    "privat": false
                 }
             ]
         }
