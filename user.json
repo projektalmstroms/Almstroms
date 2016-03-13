@@ -326,7 +326,7 @@
             "email": "eyvind.johnson@alm.se",
             "role": "Sekreterare",
             "password": "svall",
-            "authorized": false
+            "authorized": true
         }
     ]
 }
