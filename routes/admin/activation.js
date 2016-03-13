@@ -3,6 +3,10 @@ var cars = __dirname + '/../../cars.json';
 var readFile = require('../../readfiles.js');
 var user = __dirname + '/../../user.json';
 
+// Function for activation/deactivation of cars.
+// Parameters: req equal to request object. cb is next()
+// Gets data from cars.json.
+// Gets selected car and saves it into req.activateCar. Only used for showing requested car in jade-file.
 function activate1(req, cb){
    req.postAct = true;
    readFile.readJson(cars, activateCar);
@@ -17,6 +21,11 @@ function activate1(req, cb){
    }
 }
 
+// Function for activation/deactivation of cars.
+// Parameters: req equal to request object. cb is next()
+// Gets data from cars.json.
+// Picks out selected car from cars.json. If car is activated sets inspected value to false. If car is not activated sets inspected value to true.
+// Writes to file.
 function activate2(req,cb){
    readFile.readJson(cars, finalActivateCar);
    function finalActivateCar(data){

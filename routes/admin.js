@@ -20,6 +20,7 @@ router.all('/', function (req, res, next){
 	next();
 });
 
+// All unauthorized users is saved into req.autUser
 router.all('/',function(req,res,next){
 	readFile.readJson(user, autUser);
 	function autUser(data){
@@ -30,69 +31,63 @@ router.all('/',function(req,res,next){
 	}
 });
 
-// Approving new users
+// Approving new users.
+// If userOk exists in posted information call module and pass request object and next as parameters. Else go to next middleware.
 router.post('/',function(req,res,next){
    if(req.body.userOk === undefined){
       next();
    }
    else{
-      approveModule.authorizeUser(req, doNext);
-   }
-   function doNext(){
-      next();
+      approveModule.authorizeUser(req, next);
    }
 });
 
-// Activating and deactivating attribute inspected in cars.json
+// Activating and deactivating attribute inspected in cars.json. Stage 1, find car.
+// If activation exists in posted information call module and pass request object and next as parameters. Else go to next middleware.
 router.post('/',function(req,res,next){
    if(req.body.activation === undefined){
       next();
    }
    else{
-      activationModule.activate1(req, doNext);
-   }
-   function doNext(){
-      next();
+      activationModule.activate1(req, next);
    }
 });
 
+// Activating and deactivating attribute inspected in cars.json. Stage 2, make change.
+// If activationRadio exists in posted information and has length of 6, i.e. a valid registraion call module and pass request object and next as parameters. If undefined or "Nej" go to next middleware.
 router.post('/',function(req,res,next){
    if(req.body.activationRadio === undefined || req.body.activationRadio == "Nej"){
       next();
    }
    else if(req.body.activationRadio.length == 6){
-      activationModule.activate2(req,doNext);
-   }
-   function doNext(){
-      next();
+      activationModule.activate2(req,next);
    }
 });
 
+// Removing users. Stage 1, find user.
+// If delete exists in posted information call module and pass request object and next as parameters. Else go to next middleware.
 router.post('/',function(req,res,next){
    if(req.body.delete === undefined){
       next();
    }
    else{
-      deleteModule.delete1(req, doNext);
-   }
-   function doNext(){
-      next();
+      deleteModule.delete1(req, next);
    }
 });
 
+// Removing users. Stage 2, remove user.
+// If delete exists in posted information and has length call module and pass request object and next as parameters. If undefined or "Nej" go to next middleware.
 router.post('/',function(req,res,next){
    if(req.body.deleteRadio === undefined || req.body.deleteRadio == "Nej"){
       next();
    }
    else if(req.body.deleteRadio.length > 0){
-      deleteModule.delete2(req,doNext);
-   }
-   function doNext(){
-      next();
+      deleteModule.delete2(req,next);
    }
 });
 
 // Creating new cars
+// If registration exists in posted information call module and pass request object and next as parameters. If undefined go to rendering.
 router.post('/', function (req, res, next) {
    if(req.body.registration === undefined){
       next();
@@ -100,14 +95,11 @@ router.post('/', function (req, res, next) {
    else{
       req.postCar = true;
       req.check = false;
-      newcarModule.newcarFunc(req,doNext);
-  }
-  function doNext(){
-     next();
+      newcarModule.newcarFunc(req,next);
   }
 });
 
-/* GET home page. */
+// Render to /admin.
 router.all('/', function(req, res, next) {
   res.render('admin', { title: 'Admin', newCar: req.body, postedCar: req.postCar, postedAct: req.postAct, authorizedUser: req.autUser, checkedCar: req.check, activateCar: req.activateCar, change:req.activationChange, approved: req.userArray, postedUser: req.postedUser, deleted: req.userChange, employee: req.chooseUser });
 });
