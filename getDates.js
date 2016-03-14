@@ -23,7 +23,7 @@ function getDates(fromDate,toDate){
    for (var i = 0; i<days; i++){
       nextDays.push(moment(today).add(i,'days').format('YYYY-MM-DD'));
    }
-   // returns an array of all selected dates.
+   // returns array of all selected dates.
    return nextDays;
 }
 
