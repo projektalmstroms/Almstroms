@@ -1,3 +1,4 @@
+// Tillängliga variabler
 var express = require('express');
 var router = express.Router();
 var readFile = require('../readfiles.js');
@@ -5,7 +6,9 @@ var cars = __dirname + '/../cars.json';
 var bookings = __dirname + '/../bookings.json';
 var getDates = require('../getDates');
 
-/* GET home page. */
+// Funktion för att boka bilar.
+// Får data från cars.json
+// Too ManyDays blir true om man försöker boka mer än sju dagar
 router.get('/', function(req, res, next) {
 	readFile.readJson(cars, listCars);
 	function listCars(json){
@@ -15,7 +18,7 @@ router.get('/', function(req, res, next) {
 
 }
 });
-/* Funktionen söker tillgängligheten på bilar från en startdatum till ett slutdatum från bookings.json*/
+// Funktionen söker tillgängligheten på bilar från en startdatum till ett slutdatum från bookings.json
 router.get('/', function(req, res, next) {
 	var fromDate = req.query.startdate;
    var toDate = req.query.enddate;
@@ -26,12 +29,12 @@ router.get('/', function(req, res, next) {
    else{
       next();
    }
-   /*Om urvalet är större än 7 dagar sätts req.tooManyDays in */
+   //Om urvalet är större än 7 dagar sätts req.tooManyDays in
    function checkDates(data){
 		if(req.allDays.length>7){
 			req.tooManyDays = true;
 		}
-	/* Filtrerar och väljer ut alla datum mellan startdatum och slutdatum */
+	//Jämför dem önskade datumen med dem bokade bilarna i booking.json och retunerar bilarna som är upptagna.
       var mapped = data.bookings.filter(function(x){
 			for(var i in req.allDays){
 				if(x.dates.indexOf(req.allDays[i]) >=0){
@@ -39,19 +42,18 @@ router.get('/', function(req, res, next) {
 				}
 			}
       })
-     /* Retunerar antalet bilar med matchat urval */
+     //Retunerar antalet bilar med matchat urval utifrån registrerings.nr
       .map(function(x){
          return x.car;
       });
-      /* Filtrerar bilar som är inspected samtidigt som de filtreras mot datum. */
+      //Filtrerar bort bilar som finns i mapped och därmed är upptagna. Filterara bort alla som är inspected "false".
       req.list = req.list.filter(function(x){
          return mapped.indexOf(x.registration) < 0  && x.inspected === true;
       });
       next();
    }
 });
-
-	/* Skapar urval för dem olika valen genom if/else sats. */
+	//Skapar urval för dem olika valen genom if/else sats.
 router.get('/', function(req, res, next) {
 		var gearbox = req.query.vaxellada;
 		if(gearbox){
@@ -100,7 +102,7 @@ router.get('/', function(req, res, next) {
 		}
 });
 
-
+// Renderar urvalet
 router.get('/', function(req, res, next) {
 	res.render('booking', {
 	  title: 'cars',
