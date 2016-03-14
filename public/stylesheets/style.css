@@ -14,8 +14,9 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #33b5e5;
   font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  text-decoration: none;
 }
 
 .wrapper{
@@ -37,7 +38,9 @@ nav li{
    display: inline-block;
    margin-right: 20px;
    font-size: 16px;
-
+}
+nav ul li a:hover{
+   color: #178ab4;
 }
 
 #logger{
