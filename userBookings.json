@@ -58,6 +58,13 @@
                     "start": "2016-03-09",
                     "end": "2016-03-12",
                     "privat": false
+                },
+                {
+                    "car": "UIL953",
+                    "model": "Renault Clio",
+                    "start": "2016-03-30",
+                    "end": "2016-03-31",
+                    "privat": false
                 }
             ]
         },
